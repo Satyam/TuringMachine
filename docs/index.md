@@ -117,6 +117,20 @@ It has a `Clock` input on the bottom left which is fed  from the *clock* circuit
 
 It also has a `Halt` input on the top left, where the *Halt* signal from the AND gate (and a few others) comes in. This is how the machine is actually stopped, the *Halt* and a couple of error conditions stop the *sequencer* from running.  An red LED is provided in this wire to make this condition visible.
 
+##### Operation of the Sequencer
+
+The `Read` step of the *sequencer* triggers the `Symbol Read` D-Flip-flop at the top center.  It ensures the *symbol* coming from the *tape* below, on the red dot labeled `Symbol Read` remains stable for the rest of the cycle, after all, one of the operations might be to print a new *symbol* on the *tape* and it wouldn't be good if the Machine switches midway through one cycle to somewhere else.
+
+The `Print` step allows the `Write` signal coming from the memory to reach the *tape* on the `Write` red dot at the bottom.  The AND gate acts as a valve controlling when the `Write` bit from memory gets through.  Since the previous *symbol* was stored in the DFF on the previous step, it is safe to alter ir.
+
+Likewise, the `Move` step controls when the `Move` bit from the memory gets through to the *tape*.  The *sequencer* ensures the *tape* moves after the new *symbol*, if any, gets written.
+
+Finally, the `Jump` step triggers the `State` DFF so it stores the memory for the next *State* as instructed in the corresponding bits in memory.  
+
+At this point, a cycle is finished and the *Machine* is in the next *State*, which might as well be the same one if the table said so.
+
+##### Inside the Sequencer
+
 ![Sequencer](img/Sequencer.svg "The Sequencer sub-circuit")
 
 The circuit inside that `Sequencer` block is quite simple, as shown in the image right above.  It is made out of a series of D-type Flip-Flops or DFFs, as the ones we've already seen.  The inputs on each DFF are connected in a round robin fashion to the one before it, with a line going from the output of the right-most DFF to the input of the first DFF.
@@ -125,7 +139,7 @@ All the DFFs are connected to the `Reset` line so that all of them will load a `
 
 They all share the same `Clock` signal so on each clock cycle, each DFF will load the output of the previous DFF.  Since only one of the has a `1`, on each cycle, that single `1` will move from one DFF to the next until it reaches the last one and then if loops back to the first DFF.
 
-Output lines from every other DFF go to the output pins on the top-right labeled for the steps in the sequence.  For 4 steps we have 8 DFF, the reason being that we want a time gap in between successive steps.  If one step becomes active as the previous one ceases, there is a bit of instability in the transition which may cause the circuit to misbehave.  Thus, we have one DFF for each step plus another DFF for the gap in between.  In a real-life circuit you wouldn't want to have a gap the size of a full clock cycle as we have here, but with the emulator, we have to manage what is available.
+Output lines from every other DFF go to the output pins on the top-right labeled for the steps in the sequence.  For 4 steps we have 8 DFF, the reason being that we want a time gap in between successive steps.  If one step becomes active as the previous one ceases, there is a bit of instability in the transition which may cause the circuit to misbehave.  Thus, we have one DFF for each step plus another DFF for the gap in between.  In a real-life circuit you wouldn't want to have a gap the size of a full clock cycle as we have here, but with the emulator, we have to manage with what is available.
 
 On the left of the image we have the `Halt` input which controls whether the `Clock` signal is fed into the DFFs.  If the `Halt` signal is NOT (that is how the gate is called) `1`, the `Clock` gets through.
 

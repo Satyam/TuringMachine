@@ -8,7 +8,7 @@ It runs on [CircuitVerse](https://circuitverse.org/), an online digital circuit 
 
 The online version above has some extras useful in development and debugging that are not relevant to the current discussion.  The following image provides a simplified view of the machine:
 
-![Turing Machine](docs/img/TuringNoFlags.png)
+![Turing Machine](docs/img/TuringClean.svg)
 
 To make them visible, all the LEDs have been colored as if they were on otherwise they fade into the background. This configuration of LEDs would be hard to achieve.
 
