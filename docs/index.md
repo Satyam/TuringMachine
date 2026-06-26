@@ -4,11 +4,13 @@ Description: An electronic simulation of a Turing Machine
 Date: 2026-06-20
 ---
 
-A Turing Machine is an idealized machine devised by the British scientist [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) for the purpose of proving basic principles of automated data processing.  See the Wikipedia article on the [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine) for further explanation.
+# WIP
 
-The Machine has a *tape* which may have *marks* written on it. The Machine has a *head* which can read a *symbol* from the tape, either a *mark*, that is, a `1` or nothing `0`. Depending on the *state* of the Machine and the *symbol* read, it may write a mark, a `1`, or erase the existing mark, that is, write a `0`, or leave that position or *cell* as it is.  Additionally it may *move* the *tape* one position either to the left or to the right, or stay put.  Finally, the Machine can switch to another *state*, which will determine its next operation.
+A Turing Machine is an theoretical machine devised by the British scientist [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) for the purpose of proving basic principles of automated data processing.  See the Wikipedia article on the [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine) for further explanation.
 
-The Machine was never intended to perform any practical computations, but the model is simple enough that allows to study it theoretically and produce mathematical proves of basic statements which are the basis of all modern computers, one of which is that any machine or programming language that is [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness) is capable to do whatever other Turing Complete machine can do.  Obviously the Turing Machine is Turing Compatible, but that does not mean that it is practical in any sense, it takes ages to do the most basic operations.  Actually, no actual physical machine can be really *complete* since there is no way you could have an **infinite** tape, as the Machine actually requires.
+The Machine has a *tape* which may have *marks* written on it. The Machine has a *head* which can read a *symbol* from the tape, either a *mark*, that is, a `1` or nothing `0`. Depending on the *state* of the Machine and the *symbol* read, it may write a mark, a `1`, or erase the existing mark, that is, write a `0`, or leave that position  in the *tape* or *cell* as it is.  Additionally it may *move* the *tape* one position either to the left or to the right, or stay put.  Finally, the Machine can switch to another *state*, which will determine its next actions.
+
+The Machine was never intended to perform any practical computations, it is awfully slow, but the model is simple enough that allows it to be studied theoretically and produce mathematical proves of basic statements which are the basis of all modern computers, one of which is that any machine or programming language that is [Turing Complete](https://en.wikipedia.org/wiki/Turing_completeness) is capable of doing whatever data processing tasks any other Turing Complete machine can do.  Obviously the Turing Machine is Turing Complete, but that does not mean that it is practical in any sense, it takes ages to do the most basic operations.  Actually, no actual physical machine can be really *complete* since there is no way you could have an **infinite** *tape*, as the Machine actually requires.
 
 For example, this is an actual *program* to copy a bunch of contiguous bits derived from [Wikipedia](https://en.wikipedia.org/wiki/Turing_machine_examples#A_copy_subroutine)
 
@@ -28,84 +30,89 @@ For example, this is an actual *program* to copy a bunch of contiguous bits deri
 |        s5         |         0          |   1   |   R   |       s1       |
 |        s5         |         1          |   -   |   L   |       s5       |
 
+This is a [State-transition table](https://en.wikipedia.org/wiki/State-transition_table) or *State Table* for short and it is what controls the operation of the Machine.
 
-The machine always starts at the first line, in this case with the state `s0`.  The labels assigned to the states are completely arbitrary, they could be `A`, `B` and `C` or whatever unique to each state.  
+The Machine always starts at the first line, in this case with the state `s0`.  The labels assigned to the states are completely arbitrary, they could be `A`, `B` and `C` or whatever as long as they are unique to each state.  
 
-Then it reads from the *tape* a *symbol*, a `0` or a `1`, or, as it usually is referred in the theoretical papers, a *mark*  or nothing.  Actually, there are Machines that use more than two symbols but, since every Turing Machine is equivalent to any other, a machine with only a 0 or 1 is equivalent to one with 0, 1 and something else.
+Then it reads from the *tape* a *symbol*, a `0` or a `1`, or, as it usually is referred in the theoretical papers, a *mark*  or nothing.  Actually, there are Machines that use more than two symbols but, since every Turing Machine is equivalent to any other, a machine with only a `0` or `1` is equivalent to one with `0`, `1` and something else.
 
-So, the first two columns decide what to do next. The Machine can print a `0`, a `1` or do nothing, which in this case is represented by a hyphen `-`.  It doesn't mean it prints a hyphen, it means it doesn't change what is already there. 
+So, the first two columns, the *state* and the *symbol* read decide what to do next. The Machine can print a `0`, a `1` or do nothing, which in this table is represented by a hyphen `-`.  It doesn't mean it prints a hyphen, it means it doesn't change what is already there. 
 
 The next column indicates whether to *move* the tape and which way, `L` for left and `R` for right and, once again, `-` for not moving at all.
 
-The final column tells which *State* goes next.  The labels in this column should correspond to the labels of the states of the first column. There is a *state* labeled *halt* which means the program has finished, the computation done.
+The final column tells which *State* it should go next.  The labels in this column must be any of the labels of the states of the first column. There is a *Next State* labeled *Halt* which means the program has finished, the computation is done, the Machine stops.
 
-Thus, for example, the very first row, which is the starting point, is state `s0`.  If it reads a `0` from the tape, it does not need to change it but it should move the tape to the right.  After completing the changes, if any, it should go to the state `s0`, that is, it would remain in the current state.  
+Thus, for example, the very first row, which is the starting point, is state `s0`.  If it reads a `0` from the tape, it does not need to change it but it should move the tape to the right.  Finally it should go to the state `s0`, that is, it would remain in the current state.  
 
-This line means that the tape will move right until it finds a *mark*, that is, a `1`.  Then the second line applies.  The Machine is still in the `s0` state, but now the symbol read from the tape is a `1` so it will leave that `1` be, it won't move the tape (since it has finally found what it was looking for) but it will go to the state `s1`.
+This line means that the *tape* will move right until it finds a *mark*, that is, a `1`.  Then the second line applies.  The Machine is still in the `s0` state, but now the *symbol read* from the tape is a `1` so it will leave that `1` be, it won't move the tape (since it has finally found what it was looking for) but it will go to the state `s1`.
 
 The copy program will locate the first group of consecutive `1` symbols to the left of the reading *head* and make a copy of that group.  For example, if it finds `111` it will produce `1110111` with the `0` right under the reading *head*.
 
 ## Description
 
-The circuit is made of two distinct sections.  The upper half is the Turing Machine itself. The bottom part is the *tape* which the Machine is supposed to manipulate.  The *tape* in the theoretical Machine should be infinite, which is not possible for actual machines.  
+The circuit in the [on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) is made of two distinct sections.  The upper half is the Turing Machine itself. The bottom part is the *tape* which the Machine is supposed to manipulate.  The *tape* in the theoretical Machine should be infinite, which is not possible for actual machines.  In the emulator, the copy program will work with up to four `1`s, but it will overflow with five or more.
 
-The following sections describe, the *Machine*, which is the top of the the full circuit in [the on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) followed by the *tape* which is the bottom half ot that circuit.   A series of red dots show the places where the connection in between the two halves have been cut, with labels to reference them.
+The following sections describe, the *Machine*, which is the top of the the full circuit in [the on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) followed by the *tape* which is the bottom half ot that circuit.   
 
 ### The Machine itself
 
 ![Machine](img/Machine.svg "The Machine section")
 
-The image above was taken at an arbitrary moment, which affects the colors of some of the wires in the schematic.  The green lines carry a single bit, the light  green ones carry a `1`, the dark green a `0`.  The black lines are groups of wires of various widths.  They are what is usually called a *bus* as it may carry several bits just as an actual bus carries several passengers. Since each of the wires in the bus can have a `0` or a `one` the lines are a bit thicker and black, since there is no sensible way to represent what information with color.
+The image above was taken at an arbitrary moment, which affects the colors of some of the wires in the schematic.  The green lines carry a single bit, the light green ones carry a `1`, the dark green a `0`.  The black lines are groups of wires of various widths.  They are what is usually called a *bus* as they may carry several bits just as an actual bus carries several passengers. Since each of the wires in the bus can have a `0` or a `1` the lines are a bit thicker and black, since there is no sensible way to represent that information with color.
 
 When lines cross, if they do connect, there is a dot at the crossing.
 
-The labeled red dots at the end of some wires, mostly at the bottom of the image were added to this image to represent places where it connects to the rest of the circuit, namely, the *tape*.  CircuitVerse would allow me to put this whole circuit in a separate diagram and make the connections clear, but it would prevent me from showing both the *machine* and the *tape* in the same diagram.  The actual circuit in the emulator have no such red dots.
+The labeled red dots at the end of some wires, mostly at the bottom of the image were added to this image to represent places where it connects to the rest of the circuit, in this case, the *tape*.  CircuitVerse would allow me to put this whole circuit in a separate diagram and make the connections clear, but it would prevent me from showing both the *machine* and the *tape* in the same diagram.  The actual circuit in the emulator has no such red dots.
 
-#### The *State*  table.
+#### The State Table.
 
-The Machine is controlled by a memory containing the operations to perform for any state.  It is stored on the EEPROM on the top right of the image.  There is no fundamental reason to use an EEPROM except that the regular [ROM offered by CircuitVerse](https://docs.circuitverse.org/chapter4/chapter4-sequentialelements#rom) is quite lacking.
+The Machine is controlled by a memory containing the actions to perform for any state.  It is stored on the EEPROM on the top right of the image.  There is no fundamental reason to use an EEPROM except that the regular [ROM offered by CircuitVerse](https://docs.circuitverse.org/chapter4/chapter4-sequentialelements#rom) is quite lacking.
 
 The relevant pins in this memory are the ones labeled `DO` which is where the data comes out, hence Data Out, and the one labeled `A` for address.  The rest are not used.
 
 The addresses for this memory represent the state of the machine at any point.   It is configured as follows:
 
-* **Program**: 3 bits which allows for 8 different programs that can be stored at once.
+* **Program**: 3 bits which allows for 8 different programs or *state tables* that can be stored at once.
 * **States**: 6 bits for a total of 64 machine states
-* **Symbol**: 1 bit for the symbol, `0` or `1`, under the *head*, which determines which operations to execute for the given state.
+* **Symbol**: 1 bit for the symbol, `0` or `1`, under the *head*, which determines which actions to execute for the given state.
   
-Up to 8 programs can be stored in the memory.  They can be selected with the input box labeled `Program Select` immediately to its left. In this case the program `010` (binary) which is program 2 (counting from 0.)
+Up to 8 programs can be stored in the memory.  They can be selected with the input box labeled `Program Select` immediately to its left. The image shows the program `010` (binary) which is program 2 (counting from 0.)
 
-Each program is a table of up to 64 possible states.  The operations associated with the state depend on the *symbol* present under the *head*.
+Each program is a table of up to 64 possible states.  The actions associated with the state depend on the *symbol* present under the *head*.
 
-The black line connecting the memory and the program selector represents a *bus*, a shorthand representation for a set parallel wires which, if drawn separately, would clutter the diagram. 
+The black lines coming out on either end of the memory represent a *bus*, a shorthand representation for a set parallel wires which, if drawn separately, would clutter the diagram. 
 
-There is a *branch* in this *bus* which has numbers in the branches.  They represent the set of bits or wires split on each branch, with `0` representing the least significant bit. In this case, the 3 bits from the program selector are bits `7` to `9`, the next from `1` to `6` represent the *state* and the `0` at the top, the least significant bit, is for the *symbol* read from the head.
+There are *splitters* in the *buses* coming out of the memory, which have numbers in the branches.  They represent the set of bits or wires split on each branch, with `0` representing the least significant bit. 
 
-Since the *tape* moves, it is not safe to use the *symbol* straight from the head, instead, both the *symbol* and the current *state* are held in two D-type flip-flops (or DFFs) labeled `Symbol Read` and `State`.   DFFs are simple circuits which store just 1 bit or set of bits.  It doesn't have addresses like RAM memories since they hold just one bit or set of bits.  The `Symbol Read` DFF holds just 1 bit, the *symbol* while the *state* DFF holds 6 bits.  It would be nice if CircuitVerse showed a single-bit DFF different from a multi-bit DFF like the *state*, perhaps the contours of single bit DFFs stacked behind the one visible in the front, showing just the edge.
+The *splitter* to the left, the one for the address has the 3 bits `7` to `9` from the program selector, the next from `1` to `6` represent the *state* and the `0` at the top, the least significant bit, is for the *symbol* read from the head.
 
-DFFs basically have an input (on the left side, top), a trigger (on the left side, bottom, with a triangle) and an output (on the right side, top).   When the *trigger* input is pulsed, it memorizes whatever is on the *input* and holds it until another pulse comes.  This bit is reflected in the *output* pin. The emulator also shows in hexadecimal value inside the DFF.
+#### The latches
 
-By the way, how do you know which pin is which?  In the interactive emulator, the name of the pin pops up when the cursor hovers above it.
+Since the *tape* moves, it is not safe to use the *symbol* straight from the head as the tape may move, instead, both the *symbol* and the current *state* are held on or *latched* into two D-type flip-flops (or DFFs) labeled `Symbol Read` and `State`.   DFFs are simple circuits which store just 1 bit or set of bits.  It doesn't have addresses like RAM or ROM memories since they hold just one bit or set of bits.  The `Symbol Read` DFF holds just 1 bit, the *symbol*, while the *state* DFF holds 6 bits.  It would be nice if CircuitVerse showed a single-bit DFF different from a multi-bit DFF like the *state*, perhaps like a deck of stacked playing cards.
+
+DFFs basically have an input (on the left side, top), a trigger (on the left side, bottom, with a triangle) and an output (on the right side, top).   When the *trigger* input is pulsed, it latches whatever is on the *input* and holds it until another *trigger* comes.  The latched bit is reflected in the *output* pin. The emulator also shows in hexadecimal value inside the DFF.
+
+By the way, how do you know which pin is which?  In the interactive emulator, the name of the pin pops up when the cursor hovers above it.  However, in sub-circuits, which we will see below, the labels for the pins show on the inside of the block representing it.
 
 The other pin used in this circuit is the `Reset` pin, the rightmost on the bottom edge. It ensures the bit or bits stored in it are set to `0` when the circuit is powered or, in this case, when the button labeled `Reset` in the bottom-left corner of the image is pressed.  The reset ensures that the DFFs for the *state* goes to `0` when turned on, so it starts at the first row in the state table for whichever program was selected.  It also resets the top DFF for the *Symbol Read* DFF, though it isn't relevant in this circuit, it is just common practice to reset components that can be reset.
 
-We will see where the data stored in this DFFs comes from later on.  
+Later on we will see where the data stored in this DFFs comes from.  
 
-#### The operations
+#### The Actions
 
-So far we  have discussed the memory used to store the state table and the associated circuit to select the program, and look up the various *states* and the operations to perform depending on the *symbol* read.  On the right-hand side of the memory, the `DO` (Data Output) pin consists of 10 bits which control the operations to be performed by the machine.  The line coming out of that `DO` output is a *bus* which can be broken down as follows:
+So far we  have discussed the memory used to store the *state table* and the associated circuit to select the program, and look up the various *states* and the actions to perform depending on the *symbol* read.  On the right-hand side of the memory, the `DO` (Data Output) pin consists of 10 bits which control the actions to be performed by the machine.  The line coming out of that `DO` output is a *bus* which gets broken down in the *splitter* as follows:
 
 * **Next State**: 6 bits (bits `0` to `5`), the state that follows the current one.  The state `0x3f` or decimal 63 (all bits one) is reserved for HALT, which means the program has finished.
-* **Write**: (bit `6`) If 1, the value in **Print** is actually written on the tape, if 0, it is left as-is, which would be equivalent to a hyphen `-` on the state table.
-* **Move**: (bit `7`) A `1` means the *tape* must move and if `0` it won't move, equivalent to a `-` in the state table.
+* **Write**: (bit `6`) If `1`, the value in **Print** is actually written on the tape, if `0`, it is left as-is, which would be equivalent to a hyphen `-` on the *state table*.
+* **Move**: (bit `7`) A `1` means the *tape* must move and a `0` that it won't move, equivalent to a `-` in the *state table*.
 * **Print**: (bit `8`) The *symbol* (`0` or `1`) to print on the tape at the current location, valid only if **write** is `1`, ignored otherwise.
-* **DirL**: (bit `9`) Direction to move the tape, if the **Move** signal is `1`.  `0` means move right, `1` means left, that is why it is called *direction left*, `DirL`.
+* **DirL**: (bit `9`) Direction to move the tape, if the **Move** signal is `1`.  `0` means move *not left* that is right, `1` means left, that is why it is called *direction left*, `DirL`.
 
 The last two signals, `Print` and `DirL` go directly to the *tape* circuit below and will be described later.  
 
-The `Next State` bits go to two destinations.  One is the `State` DFF where they will eventually be used as part of the memory address.   The other destination is a big AND gate at the left edge of the circuit.  And AND gate produces a `1` when and only when all its inputs are `1`.  This big AND gate detects when the next state is all-ones (`0x3f`, decimal 63 or `111111`) which is the code for **Halt** indicating the program has reached the end.  This `halt` signal is fed to the *Sequencer* circuit, described next.
+The `Next State` bits go to two destinations.  One is the `State` DFF where they will eventually be used as part of the memory address.   The other destination is a big AND gate at the left edge of the circuit.  And AND gate produces a `1` when and only when all its inputs are `1`.  This big AND gate detects when the next state is all-ones (`0x3f`, decimal 63 or `111111`) which is the code for **Halt** indicating the program has reached the end.  This `halt` signal (along others described further down) is fed to the *Sequencer* circuit, described next.
 
-The *State Table* must be translated to these bit patterns. For example, the table above will be converted to this:
+The *State Table* must be translated to these bit patterns that encode the actions. For example, the table above will be converted to this:
 
 | Current<br/>State | Current<br/>Symbol | Print | Move  | Next<br/>State | Memory<br/>Address |  Hex  | DirL  | Print | Move  | Write | Next<br/>State |
 | :---------------: | :----------------: | :---: | :---: | :------------: | :----------------: | :---: | :---: | :---: | :---: | :---: | :------------: |
@@ -126,32 +133,32 @@ Notice in the third row, the last column, the distinct pattern of all ones `1111
 
 #### The Sequencer.
 
-More or less in the middle of the image above lies block labeled `Sequencer`.   This is what in CircuitVerse is called a *sub-circuit*.  The EEPROM, or the DFFs are all sub-circuits but are predefined and are modelled after actual silicon chips.   CircuitVerse allows the designer to create *sub-circuits* which can be represented as a rectangular block.  Unlike regular built-in circuit elements where the function of the pins is revealed if the cursor hovers over the pin, in *sub-circuits* the pins are labeled within the block, that is why it is full of labels on the inside.
+Slightly left of the center of the image above lies a block labeled `Sequencer`.   This is what in CircuitVerse is called a *sub-circuit*.  The EEPROM or the DFFs are all sub-circuits made of multiple gates but are predefined and are modelled after actual silicon chips and come included in CircuitVerse.   CircuitVerse allows the designer to create custom *sub-circuits* which can be represented as a rectangular block.  Unlike regular built-in circuit elements where the function of the pins is revealed if the cursor hovers over the pin, in *sub-circuits* the pins are labeled within the block, that is why the sequencer is full of labels on the inside.
 
-What is a *sequencer*?  Operations in the machine have to be performed in a certain sequence, namely:
+What is a *sequencer*?  Actions in the machine have to be performed in a certain sequence, namely:
 
 1. **Read** the symbol under the *head*.
 1. **Print** a new value, or leave it as it is.
 1. **Move** the tape left or right or leave it where it is.
 1. **Jump** to the new *state*.
 
-The *sequencer* has pins on the right edge labeled for these steps in the sequence and connect to where this operations are to be performed.
+The *sequencer* says **when** the actions are to be performed not if they will.  It has pins on the right edge labeled for these steps in the sequence and connect to other circuits where this actions are to be performed.
 
 The *sequencer* has a `Reset` input at the bottom to ensure the sequence starts at the first step when turned on.
 
-It has a `Clock` input on the bottom left which is fed  from the *clock* circuit element (the wavy green squiggle on a square box to its left).
+It has a `Clock` input on the bottom left which is fed  from the *clock* circuit element (the wavy green squiggle on a square box to its left) which is already predefined in CircuitVerse.
 
-It also has a `Halt` input on the top left, where the *Halt* signal from the AND gate (and a few others) comes in. This is how the machine is actually stopped, the *Halt* and a couple of error conditions stop the *sequencer* from running.  An red LED is provided in this wire to make this condition visible.
+It also has a `Halt` input on the top left, where the *Halt* signal from the AND gate (and a few others) comes in. This is how the machine is actually stopped, the *Halt* and a couple of error conditions stop the *sequencer* from running.  A red LED is provided in this wire to make this condition visible.
 
 ##### Operation of the Sequencer
 
-The `Read` step of the *sequencer* triggers the `Symbol Read` D-Flip-flop at the top center.  It ensures the *symbol* coming from the *tape* below, on the red dot labeled `Symbol Read` remains stable for the rest of the cycle, after all, one of the operations might be to print a new *symbol* on the *tape* and it wouldn't be good if the Machine switches midway through one cycle to somewhere else.
+The `Read` step of the *sequencer* triggers the `Symbol Read` DFF at the top center.  It ensures the *symbol* coming from the *tape* below via the red dot labeled `Symbol Read` remains stable for the rest of the cycle, after all, one of the actions might be to print a new *symbol* on the *tape* and it wouldn't be good if the Machine gets its *symbol* input switched while it still midway through a series of actions.  Thus, it needs to hold it steady in the DFF.
 
-The `Print` step allows the `Write` signal coming from the memory to reach the *tape* on the `Write` red dot at the bottom.  The AND gate acts as a valve controlling when the `Write` bit from memory gets through.  Since the previous *symbol* was stored in the DFF on the previous step, it is safe to alter ir.
+The `Print` step allows the `Write` signal coming from the memory to reach the *tape* on the `Write` red dot at the bottom.  The AND gate acts as a valve controlling when the `Write` bit from memory gets through.  Since the previous *symbol* was stored in the DFF on the previous step, it is safe to alter it.
 
-Likewise, the `Move` step controls when the `Move` bit from the memory gets through to the *tape*.  The *sequencer* ensures the *tape* moves after the new *symbol*, if any, gets written.
+Likewise, the `Move` step controls when the `Move` bit from the memory gets through to the *tape*.  The *sequencer* ensures the *tape* doesn't move until the new *symbol*, if any, gets written in the previous step.
 
-Finally, the `Jump` step triggers the `State` DFF so it stores the memory for the next *State* as instructed in the corresponding bits in memory.  
+Finally, the `Jump` step triggers the `State` DFF so it stores the memory for the next *State* as instructed in the corresponding bits in memory and keeps it steady for the actions associated to the new *state*.
 
 At this point, a cycle is finished and the *Machine* is in the next *State*, which might as well be the same one if the table said so.
 
@@ -159,13 +166,13 @@ At this point, a cycle is finished and the *Machine* is in the next *State*, whi
 
 ![Sequencer](img/Sequencer.svg "The Sequencer sub-circuit")
 
-The circuit inside that `Sequencer` block is quite simple, as shown in the image right above.  It is made out of a series of D-type Flip-Flops or DFFs, as the ones we've already seen.  The inputs on each DFF are connected in a round robin fashion to the one before it, with a line going from the output of the right-most DFF to the input of the first DFF.
+The circuit inside that `Sequencer` block is quite simple, as shown in the image right above.  It is made out of a series of D-type Flip-Flops or DFFs, just as the ones we've already seen. Each holds just one bit.  The inputs on each DFF are connected in a round robin fashion to the one before it, with a line going from the output of the right-most DFF to the input of the first DFF.
 
 All the DFFs are connected to the `Reset` line so that all of them will load a `0` except the first one which also has the `preset` pin also connected to the `Reset` line.  That gets a `1` on the first, left-most DFF and `0` on all the rest.
 
 They all share the same `Clock` signal so on each clock cycle, each DFF will load the output of the previous DFF.  Since only one of the has a `1`, on each cycle, that single `1` will move from one DFF to the next until it reaches the last one and then if loops back to the first DFF.
 
-Output lines from every other DFF go to the output pins on the top-right labeled for the steps in the sequence.  For 4 steps we have 8 DFF, the reason being that we want a time gap in between successive steps.  If one step becomes active as the previous one ceases, there is a bit of instability in the transition which may cause the circuit to misbehave.  Thus, we have one DFF for each step plus another DFF for the gap in between.  In a real-life circuit you wouldn't want to have a gap the size of a full clock cycle as we have here, but with the emulator, we have to manage with what is available.
+Output lines from every other DFF go to the output pins on the top-right labeled for the steps in the sequence.  For 4 steps we have 8 DFF, the reason being that we want a time gap in between successive steps.  If one step becomes active as the previous one ceases, there is a bit of instability in the transition which may cause the circuit to misbehave.  Thus, we have one DFF for each step plus another DFF for the gap in between *active* states.  In a real-life circuit you wouldn't want to have a gap the size of a full clock cycle as we have here, but with the emulator, we have to manage with what circuit elements are available.
 
 On the left of the image we have the `Halt` input which controls whether the `Clock` signal is fed into the DFFs.  If the `Halt` signal is NOT (that is how the gate is called) `1`, the `Clock` gets through.
 
@@ -180,24 +187,26 @@ We can see how this all works together in a sample run of the whole machine.  We
 
 The program runs like this:
 
-1. The `Reset` button is pressed.   The *sequencer* is reset and a `1` is loaded on the first DFF, which is a *gap*, so doesn't show in any of the output pins.  They are all off.   The two DFFs for the *Symbol Read* and the *Current State* get reset and loaded with all `0`s.
-2. At the next pulse of the clock, the *sequencer* advances and the `Read` pin comes on.  This will trigger the top *Symbol Read* DFF which reads the input from the cell of the *tape* under the *head* which comes through the red dot labeled `Symbol Read`.  
-  At this point a full address for the memory is formed.   Assuming we selected program `000` the address will be `000 000000 0`, where I placed spaces in between the various parts of the address, meaning it breaks into this: 
+1. The `Reset` button is pressed.   
+   * The *sequencer* is reset and a `1` is loaded on the first DFF, which is a *gap*, so it doesn't show in any of the output pins.  They are all off and no action is performed until well after the reset.   
+   * The two DFFs for the *Symbol Read* and the *Current State* get reset and loaded with all `0`s.
+2. At the next pulse of the clock, the *sequencer* advances past the first gap and the `Read` pin comes on.  This will trigger the top *Symbol Read* DFF which reads the input from the cell of the *tape* under the *head* which comes through the red dot labeled `Symbol Read`.  
+  At this point a full address for the memory is formed. Assuming we selected program `000` the address will be `000 000000 0`, where I placed spaces in between the various parts of the address, meaning it breaks into this: 
 
   * *program* `000` 
   * *state* `000000` 
   * *symbol* `0`
 
-3. The memory outputs the data at address `0` which is `0x080` hex or `001000000` binary which will be broken in the splitter, from left to right, as follows:
+3. The memory outputs the data at address `0` which is `0x080` hex or `001000000` binary which will be broken in the *splitter*, from left to right, as follows:
    * bit 9: `DirL = 0` so that, should it move, it will move right.
-   * bit 8: `Print = 0` should it print, it would print a `0`
-   * bit 7: `Move = 1`  meaning it should move, in this case to the right according to the `DirL` bit.
-   * bit 6: `Write = 0` meaning it doesn't need to write anything in the *tape*.
+   * bit 8: `Write = 0` meaning it doesn't need to write anything in the *tape*. 
+   * bit 7: `Move = 1`  meaning it should move, indeed, in this case to the right according to the `DirL` bit.
+   * bit 6: `Print = 0` irrelevant since bit 8 says it won't write anything.
    * bits 0 to 5: `Next State = 000000` the *Machine* should remain at the first state labeled `s0` above.
 
-4. The *sequencer* would turn off the `Read` pin, allow for a gap with no pins active and then turn the `Print` pin on.  This means this is the time for printing, whether it does so depends on the bit 8: `Print` which is `0` so it doesn't actually write anything. The red dot labeled `Write` will remain `0`.
-5. Another gap in the *sequencer* with no active pins on and then comes the `Move` switched on.  Since the bit 7 of the operation, `Move` is `1`, the red dot pin `Move` will turn on so the tape will move, and since the *Direction Left* pin `DirL` is `0`, it will move right.
-6. A final gap in the *sequencer* and then the `Jump` pin turns on.  This pin triggers the `State` DFF which will read load the bits 0 to 5 with all `0`s.  In other words, it remains in the same state, as the first row in table above shows.
+4. On the next clock cycle, the *sequencer* would turn off the `Read` pin, allow for a gap with no pins active and then turn the `Print` pin on.  This means this is the time for printing, whether it does so depends on the bit 8: `Write` which is `0` so it doesn't actually print anything on the *tape* because the red dot labeled `Write` will remain `0`.
+5. Another gap in the *sequencer* with no active pins on and then the `Move` pin is switched on.  Since the bit `7` of the action (`Move` is `1`) the red dot pin `Move` will turn on so the tape will move, and since the *Direction Left* pin `DirL` is `0`, it will move right.
+6. A final gap in the *sequencer* and then the `Jump` pin turns on.  This pin triggers the `State` DFF which will load the bits 0 to 5 with all `0`s.  In other words, in this particular part of the program it remains in the same state, as the first row in table above shows.
 7. The `sequencer` loops back to the first step which is a gap and, on the next clock pulse, turns the `Read` pin on which will load the new *symbol* from the *tape* at the cell under the *head*.
 
 At this point two things might happen, if the `Symbol Read` is another `0`, then it would repeat the sequence above starting at item `2.`.   However, eventually, we expect the *Machine* to bump into a `1`, otherwise the infinite *tape* would run forever or, in our circuit, it will signal an *overflow* and halt, as we will see later.
@@ -211,26 +220,26 @@ Let us assume it does bump with a `1` symbol, which would form the memory addres
 Which points to the second row of the table extract above, containing:
 
    * bit 9: `DirL = 0` which doesn't matter since it won't move.
-   * bit 8: `Print = 0` likewise, since it won't write, it is irrelevant.
+   * bit 8: `Write = 0` Don't write.
    * bit 7: `Move = 0`  Don't move.
-   * bit 6: `Write = 0` Don't write*.
+   * bit 6: `Print = 0`  which doesn't matter since it won't write anything into the tape..
    * bits 0 to 5: `Next State = 000001` the *Machine* should switch to the state `s1` above.
 
 In other words, when it finds a `1` instead of keep moving the *tape* right, it should leave the *tape* alone and switch to *state* `s1` and since we know the *symbol* is `1`, it will be located at address `000 000001 1`, once again with spaces to make it easy to interpret the various parts, and corresponds to the fourth row in the complete *State Table*, where the program to do the actual copying is done.  The [Wikipedia](https://en.wikipedia.org/wiki/Turing_machine_examples#A_copy_subroutine) article explain how it works.  This version is slightly different from that in that
 
-* The original version expects the right bit of the set of bits to be copied to be right under the *head*.  This version can have the bits either with the rightmost bit under the *head* or totally left.   Unfortunately it can't be either left or right of the head because, since the *tape* is supposedly infinite, if it starts looking in one direction it can go forever without ever confirming that a set of bits cannot exist in all that infinity.
+* The original version expects the right bit of the set of bits to be copied to be right under the *head*.  This version can have the bits either with the rightmost bit under the *head* or to its left.   Unfortunately they can't be either left or right of the head because, since the *tape* is supposedly infinite, if it starts looking in one direction it can go forever without ever confirming that a set of bits cannot exist in all that infinity.
 * The original sometimes overwrites `0`s over `0`s and `1`s over `1`s.  Since the program knows whether the symbol under the head is one or the other, it has hyphens `-` when the symbol doesn't really need to be changed.
 
 #### Possible Machine improvements
 
-Several improvements could be done on this *Machine* but it really doesn't matter since it is already well known that this is the worst possible computing device.  It is meant to prove some principles of computing theory not be fast, which it certainly isn't.
+Several improvements could be done on this *Machine* but it really doesn't matter since it is already well known that this is the worst possible computing device.  It is meant to prove some principles of computing theory not to be fast, which it certainly isn't.
 
 Likewise, this example Machine was designed to play with and see how it works, so it is better to go for clarity rather than performance.  But, it can be improved, and you can go to CircuitVerse and *clone* this machine and play with it in your own version.
 
 These are some examples of things that could be improved:
 
 * The `Print` and `Write` bits in the operating instruction could be merged into one bit called `Change`.  The memory could be reduced from a width of 10 bits to 9 and the splitter would have one branch less.  Since the *State Table* already has separate entries for *symbol* `0` or `1`, it would know whether to change it or not.  This doesn't require the *State Table* to be changed, the script that translates the entered table could figure out the `Change`.
-* The *sequencer* could be modified so that it skips over the *Move* and *Print* steps if no movement or writing is to occur.  The *machine* would run much faster if it skipped a step that doesn't actually do anything  and the intervening gap.
+* The *sequencer* could be modified so that it skips over the *Move* and *Print* steps if no movement or writing is to occur.  The *machine* would run much faster if it skipped a step that doesn't actually do anything  and the gap that follows.
 * The gaps in between the active steps of the *sequencer* could be reduced from a full clock cycle to a very short delay, for example, by chaining two NOT gates in between the active DFFs, relying on the gate delay of the gates instead of counting a full clock cycle doing nothing.   This would also require having every other of the active DFFs triggered by the inverted clock signal.  This would likely quadruple the speed of the circuit for the same clock speed as each step would take half a clock cycle instead of two full clock cycles, one active and one for the gap.
 
 
