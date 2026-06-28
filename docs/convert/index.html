@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>State Table converter</title>
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Coverter</h1>
+    <p>
+      Converts a State-transitions Table for the
+      <a
+        href="https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0"
+        >Turing Machine emulator</a
+      >
+      into a series of bytes to load into the EEPROM memory of the emulator.
+    </p>
+    <!--iframe
+      src="https://circuitverse.org/simulator/embed/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true"
+      style="border-width: 2px; border-style: solid; border-color: black"
+      name="myiframe"
+      id="projectPreview"
+      scrolling="no"
+      frameborder="1"
+      marginheight="0px"
+      marginwidth="0px"
+      height="500"
+      width="500"
+      allowfullscreen
+    ></iframe-->
+    <textarea id="ta" cols="60" rows="20" spellcheck="false" autocorrect="off">
+##State  Symbol   Print Operation Next State
+   s1      0        -       -            Halt
+   s1      1        0       R            s2
+   s2      0        0       R            s3
+   s2      1        1       R            s2
+   s3      0        1       L            s4
+   s3      1        1       R            s3
+   s4      0        0       L            s5
+   s4      1        1       L            s4
+   s5      0        1       R            s1
+   s5      1        1       L            s5</textarea
+    >
+    <button id="convert">Convert</button>
+    <div id="results" hidden>
+      <pre id="out"></pre>
+      <button id="copy">Copy</button>
+      <table>
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Symbol</th>
+            <th>Print</th>
+            <th>Move</th>
+            <th>Next</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
