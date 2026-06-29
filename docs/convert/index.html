@@ -4,6 +4,16 @@
     <title>State Table converter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./simple.min.css" />
+    <style>
+      .results td {
+        white-space: nowrap;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .results th {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <h1>Coverter</h1>
@@ -15,6 +25,84 @@
       >
       into a series of bytes to load into the EEPROM memory of the emulator.
     </p>
+    <details>
+      <summary>Step by step instructions</summary>
+      <p>
+        Manually enter or simply paste a <b>State Table</b> into the box below.
+      </p>
+      <p>The <b>State Table</b> might look like the following</p>
+      <pre>
+##State  Symbol   Print Operation Next State
+   s1      0        -       -            Halt
+   s1      1        0       R            s2
+   s2      0        0       R            s3
+   s2      1        1       R            s2
+   s3      0        1       L            s4
+   s3      1        1       R            s3
+   s4      0        0       L            s5
+   s4      1        1       L            s4
+   s5      0        1       R            s1
+   s5      1        1       L            s5</pre
+      >
+      <ul>
+        <li>
+          Everything after the first <code>#</code> in a line is ignored, like
+          the headings above
+        </li>
+        <li>
+          There should be an entry per line, where the various parts are
+          separated by one or more blank spaces or tabs. There is no particular
+          formatting required, the following table, more compact than the
+          example above, is just as good.
+          <pre>
+# Overflow left
+A 0 1 L B
+A 1 1 L B
+B 0 - L B
+B 1 0 L B</pre
+          >
+        </li>
+        <li>All entries are case-insensitive</li>
+        <li>
+          The columns are:
+          <ol>
+            <li>
+              State: A label, any characters except <code>#</code> and spaces
+              are valid. There should be two rows with the same label for each
+              State.
+            </li>
+            <li>
+              Symbol: Either a <code>0</code> or a <code>1</code> for the Symbol
+              read from the tape.
+            </li>
+            <li>
+              Print, what and whether to print on the tape, it can be a
+              <code>0</code>, a <code>1</code> or <code>-</code> which means
+              don't print anything.
+            </li>
+            <li>
+              Move, whether to move the tape and in which direction. Can be
+              <code>L</code> for left, <code>R</code> for right and
+              <code>-</code> for <i>don't move</i>.
+            </li>
+            <li>
+              Next State: Which state to go next. It should match one of the
+              labels on the first column, or can be the word
+              <code>Halt</code> to stop the execution
+            </li>
+          </ol>
+        </li>
+        <li>
+          When the table is entered or pasted, press the
+          <code>Convert</code> button below the table to process.
+        </li>
+        <li>The results will appear below, see further instructions below.</li>
+        <li>
+          Either of the sample tables above can be copied and then pasted, just
+          to try it out.
+        </li>
+      </ul>
+    </details>
     <!--iframe
       src="https://circuitverse.org/simulator/embed/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true"
       style="border-width: 2px; border-style: solid; border-color: black"
@@ -43,15 +131,31 @@
     >
     <button id="convert">Convert</button>
     <div id="results" hidden>
+      <p>
+        The box below contains a sequence of numbers that can be pasted into the
+        EEPROM in the emulator. They have already been copied into the
+        <i>clipboard</i>.
+      </p>
       <pre id="out"></pre>
-      <button id="copy">Copy</button>
-      <table>
+
+      <table class="results">
         <thead>
+          <tr>
+            <th colspan="5">State table</th>
+            <th rowspan="2">Address</th>
+            <th rowspan="2">Bits</th>
+            <th colspan="5">Broken down</th>
+          </tr>
           <tr>
             <th>State</th>
             <th>Symbol</th>
             <th>Print</th>
             <th>Move</th>
+            <th>Next</th>
+            <th>DirL</th>
+            <th>Print</th>
+            <th>Move</th>
+            <th>Write</th>
             <th>Next</th>
           </tr>
         </thead>
