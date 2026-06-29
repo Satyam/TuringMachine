@@ -1,8 +1,8 @@
-const bitPatterns = {
+export const bitPatterns = {
   write: 1 << 6,
   move: 1 << 7,
-  dataOne: 1 << 8,
-  dataZero: 0,
+  printOne: 1 << 8,
+  printZero: 0,
   dirRight: 0,
   dirLeft: 1 << 9,
   halt: 0b111111,
@@ -78,10 +78,10 @@ export function generateBytes(states) {
         } else {
           switch (print) {
             case '0':
-              byte += bitPatterns.dataZero + bitPatterns.write;
+              byte += bitPatterns.printZero + bitPatterns.write;
               break;
             case '1':
-              byte += bitPatterns.dataOne + bitPatterns.write;
+              byte += bitPatterns.printOne + bitPatterns.write;
               break;
             case '-':
               break;
