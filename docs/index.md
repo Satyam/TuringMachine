@@ -4,7 +4,27 @@ Description: An electronic simulation of a Turing Machine
 Date: 2026-06-20
 ---
 
-# WIP
+- [Work In Progress](#work-in-progress)
+  - [Description](#description)
+    - [The Machine itself](#the-machine-itself)
+      - [The State Table.](#the-state-table)
+      - [The latches](#the-latches)
+      - [The Actions](#the-actions)
+      - [The Sequencer.](#the-sequencer)
+        - [Operation of the Sequencer](#operation-of-the-sequencer)
+        - [Inside the Sequencer](#inside-the-sequencer)
+      - [A sample run](#a-sample-run)
+      - [Converting the States Table to byte codes](#converting-the-states-table-to-byte-codes)
+      - [Possible Machine improvements](#possible-machine-improvements)
+- [The section below is still a draft.](#the-section-below-is-still-a-draft)
+    - [The *tape*](#the-tape)
+  - [Operation](#operation)
+  - [Programs](#programs)
+  - [Stretching the tape](#stretching-the-tape)
+
+Also: [Converter](./convert/index.html)
+
+# Work In Progress
 
 A Turing Machine is an theoretical machine devised by the British scientist [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) for the purpose of proving basic principles of automated data processing.  See the Wikipedia article on the [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine) for further explanation.
 
@@ -230,6 +250,11 @@ In other words, when it finds a `1` instead of keep moving the *tape* right, it 
 * The original version expects the right bit of the set of bits to be copied to be right under the *head*.  This version can have the bits either with the rightmost bit under the *head* or to its left.   Unfortunately they can't be either left or right of the head because, since the *tape* is supposedly infinite, if it starts looking in one direction it can go forever without ever confirming that a set of bits cannot exist in all that infinity.
 * The original sometimes overwrites `0`s over `0`s and `1`s over `1`s.  Since the program knows whether the symbol under the head is one or the other, it has hyphens `-` when the symbol doesn't really need to be changed.
 
+#### Converting the States Table to byte codes
+
+It would be tedious to convert the *State Table* into the series of bits required by the machine.  A [Converter](./convert/index.html) is available to play with.   To make it easier to use on a regular basis, the instructions are collapsed. Do expand them the first time around.
+
+
 #### Possible Machine improvements
 
 Several improvements could be done on this *Machine* but it really doesn't matter since it is already well known that this is the worst possible computing device.  It is meant to prove some principles of computing theory not to be fast, which it certainly isn't.
@@ -243,7 +268,12 @@ These are some examples of things that could be improved:
 * The gaps in between the active steps of the *sequencer* could be reduced from a full clock cycle to a very short delay, for example, by chaining two NOT gates in between the active DFFs, relying on the gate delay of the gates instead of counting a full clock cycle doing nothing.   This would also require having every other of the active DFFs triggered by the inverted clock signal.  This would likely quadruple the speed of the circuit for the same clock speed as each step would take half a clock cycle instead of two full clock cycles, one active and one for the gap.
 
 
+---
+# The section below is still a draft.
+
 ### The *tape* 
+
+![The tape](./img/Tape.svg)
 
 The tape is at the bottom made up of two sub-circuits, one for the main  cell (the one in the middle) called the Head since there is where the read/write head is and any number of extra cells at either side.   
 
