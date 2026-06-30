@@ -1,0 +1,920 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1888.064" height="358.557">
+  <path d="M0 0h1888.064v358.557H0z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.0755906"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M842.638 223.595h190v80h-190Z" paint-order="fill stroke markers"/>
+  <text x="1027.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="847.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="892.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="952.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="922.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1012.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DIn</text>
+  <text x="982.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Write</text>
+  <text x="992.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="847.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1027.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="942.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <text x="862.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DOut</text>
+  <path fill="green" d="M845.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M945.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M865.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M845.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M895.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M955.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M925.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1015.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M985.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M995.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1032.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1117.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1037.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1042.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1102.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1072.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1102.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1037.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1117.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1072.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1035.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1075.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1045.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1105.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1075.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1105.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1122.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1207.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1127.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1132.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1192.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1162.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1192.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1127.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1207.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1162.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1165.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1135.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1195.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1165.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1195.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1212.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1297.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1217.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1222.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1282.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1252.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1282.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1217.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1297.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1252.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1255.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1225.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1285.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1255.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1285.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1302.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1387.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1307.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1312.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1372.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1342.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1372.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1307.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1387.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1342.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1345.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1315.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1375.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1345.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1375.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1392.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1477.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1397.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1402.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1462.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1432.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1462.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1397.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1477.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1432.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1435.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1405.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1465.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1435.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1465.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1482.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1567.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1487.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1492.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1552.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1522.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1552.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1487.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1567.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1522.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1525.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1495.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1555.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1525.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1555.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M572.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="657.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="577.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="582.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="642.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="612.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="642.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="577.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="657.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="612.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M615.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M585.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M645.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M615.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M645.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M662.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="747.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="667.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="672.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="732.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="702.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="732.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="667.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="747.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="702.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M705.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M675.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M735.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M705.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M735.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M752.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="837.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="757.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="762.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="822.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="792.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="822.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="757.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="837.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="792.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M845.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M795.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M845.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M765.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M825.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M795.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M825.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M302.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="387.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="307.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="312.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="372.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="342.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="372.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="307.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="387.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="342.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M345.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M315.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M375.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M345.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M375.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M392.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="477.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="397.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="402.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="462.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="432.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="462.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="397.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="477.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="432.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M435.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M405.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M465.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M435.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M465.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M482.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="567.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="487.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="492.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="552.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="522.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="552.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="487.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="567.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="522.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M525.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M495.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M555.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M525.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M555.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1572.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1657.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1577.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1582.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1642.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1612.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1642.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1577.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1657.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1612.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1615.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1585.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1645.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1615.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1645.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1662.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1747.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="1667.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1672.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1732.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1702.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1732.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="1667.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="1747.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="1702.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M1665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1705.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1675.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1735.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1705.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1735.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M212.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="297.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="217.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="222.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="282.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="252.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="282.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="217.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="297.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="252.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M255.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M225.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M285.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M255.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M285.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M122.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="207.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="127.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="132.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="192.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="162.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="192.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
+  <text x="127.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <text x="207.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <text x="162.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <path fill="green" d="M125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M165.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M135.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M195.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M165.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M195.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1752.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
+  <text x="1772.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1802.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="1757.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
+  <text x="1832.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="1792.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <text x="1837.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">Halt</text>
+  <text x="1757.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DOutL</text>
+  <path fill="green" d="M1795.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1845.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1775.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1805.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1835.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M32.638 223.595h90v80h-90Z" paint-order="fill stroke markers"/>
+  <text x="52.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="82.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
+  <text x="117.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
+  <text x="112.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
+  <text x="72.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">LED</text>
+  <text x="37.138" y="268.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">Halt</text>
+  <text x="117.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DOutR</text>
+  <path fill="green" d="M75.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M35.138 263.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M55.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M85.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M115.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <text x="747.881" y="67.32" dominant-baseline="alphabetic" font-family="sans-serif" font-size="14" text-anchor="end" text-decoration="normal">Reset</text>
+  <path fill="none" stroke="#353535" stroke-miterlimit="10" stroke-width="5" d="M731.94 101.929v20" paint-order="fill stroke markers"/>
+  <path fill="#ddd" stroke="#353535" stroke-miterlimit="10" stroke-width="5" d="M743.44 91.429a12 12 0 1 1 0-.012" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M942.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M933.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1072.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1063.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1162.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1153.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1252.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1243.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1342.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1333.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1432.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1423.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1522.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1513.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M612.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M603.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M702.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M693.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M792.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M783.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M342.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M333.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M432.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M423.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M522.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M513.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1612.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1603.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1702.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1693.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M252.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M243.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M162.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M153.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M1792.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M1783.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="none" stroke="#e3e4e5" stroke-miterlimit="10" stroke-width="3" d="M72.638 283.595v20" paint-order="fill stroke markers"/>
+  <path fill="#e3e4e5" fill-opacity=".8" stroke="#d3d4d5" stroke-miterlimit="10" d="M63.638 278.595v-15a9 9 0 0 1 18 0v15l3 3 .203.305a22 22 0 0 1-24.406 0l3.203-3.305" paint-order="stroke fill markers"/>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M982.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="992.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1092.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1102.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1182.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1192.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1272.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1282.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1362.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1372.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1452.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1462.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1542.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1552.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M632.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="642.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">1</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M722.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="732.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">1</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M812.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="822.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M362.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="372.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M452.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="462.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M542.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="552.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">1</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1632.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1642.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1722.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="1732.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M272.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="282.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M182.638 323.595h20v20h-20z" paint-order="fill stroke markers"/>
+  <text x="192.138" y="338.095" fill="green" dominant-baseline="alphabetic" font-family="sans-serif" font-size="20" text-anchor="middle" text-decoration="normal">0</text>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M842.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1032.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.601" d="M862.638 222.205V49.338" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1032.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M842.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M892.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M952.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M922.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.945" d="M1012.638 221.672V48.725" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.607" d="M982.638 222.187V48.675" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1122.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1072.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1122.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1042.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1102.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1072.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1102.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M942.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M992.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1212.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1162.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1212.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1132.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1192.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1162.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1192.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1302.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1252.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1302.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1222.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1282.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1252.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1282.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1392.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1342.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1392.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1312.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1372.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1342.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1372.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1482.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1432.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1482.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1402.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1462.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1432.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1462.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1572.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1522.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1572.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1492.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1552.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1522.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1552.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M572.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M662.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M612.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M662.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M572.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M582.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M642.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M612.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M642.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M752.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M702.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M752.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M672.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M732.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M702.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M732.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M792.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M762.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M822.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M792.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M822.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M302.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M392.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M342.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M392.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M302.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M312.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M372.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M342.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M372.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M482.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M432.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M482.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M402.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M462.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M432.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M462.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M522.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M492.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M552.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M522.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M552.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1492.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1492.138 193.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1522.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1522.138 173.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1552.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1552.138 143.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1432.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1342.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1252.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1162.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1072.138 173.595h-150" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.713" d="M1072.638 171.885V49.31" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M922.138 173.595h-130" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M792.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M702.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M522.138 173.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M522.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M731.94 121.429v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1462.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1402.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1372.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1312.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1282.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1222.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.743" d="M1132.347 190.54V48.376" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1192.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1132.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1102.138 143.595h-150" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1042.138 193.595h-150" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M952.138 143.595h-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M892.138 193.595h-130" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M822.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M822.138 143.595h80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M762.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M732.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M672.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M642.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M582.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M552.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M492.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M372.138 143.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M372.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M402.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M432.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M312.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M342.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1662.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1612.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1662.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1582.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1642.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1612.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1642.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1582.138 193.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1612.138 173.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1642.138 143.595h90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1752.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1702.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1752.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1672.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1732.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1702.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1732.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1672.138 193.595h100" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1702.138 173.595h100" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1732.138 143.595h100" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M212.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M252.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M212.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M222.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M282.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M252.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M282.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M222.138 193.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M252.138 173.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M282.138 143.595h-90" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M122.638 273.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M162.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M122.638 253.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M132.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M192.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M162.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M192.638 303.095v20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M132.138 193.595h-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M162.138 173.595h-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M192.138 143.595h-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1792.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1772.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1802.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M52.638 223.095v-30" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M82.638 223.095v-50" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M32.138 263.595h-20" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M72.638 303.595v0" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M112.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1832.638 223.095v-80" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.128" d="M1841.393 253.595h25.167" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.138" d="M1399.884 48.694v43.763" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1869.613 92.717h-470" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.278" d="M482.994 48.777V96.54" paint-order="fill stroke markers" style="fill:red;stroke:red"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M482.494 97.33h-470" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.657" d="M12.638 263.418V98.658" paint-order="fill stroke markers"/>
+  <path fill="none" stroke="green" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.077" d="M1870.385 94.344V252.13" paint-order="fill stroke markers"/>
+  <path fill="green" d="M845.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M865.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M845.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M895.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M955.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M925.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1015.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M985.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1075.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1035.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1045.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1105.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1075.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1105.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M945.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M995.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M945.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1075.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M995.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1105.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1165.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1135.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1195.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1165.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1195.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1165.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1195.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1255.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1225.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1285.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1255.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1285.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1255.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1285.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1345.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1315.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1375.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1345.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1375.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1345.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1375.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1435.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1405.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1465.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1435.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1465.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1435.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1465.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1525.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1495.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1555.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1525.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1555.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1525.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1555.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M615.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M585.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M645.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M615.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M645.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M615.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M645.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M705.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M675.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M735.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M705.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M735.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M705.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M735.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M845.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M795.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M845.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M765.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M825.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M795.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M825.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M795.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M825.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M345.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M315.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M375.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M345.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M375.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M345.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M375.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M435.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M395.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M405.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M465.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M435.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M465.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M435.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M465.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M525.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M495.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M555.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M525.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M555.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M525.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M555.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1495.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1525.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1555.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1435.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1345.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1255.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1165.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1075.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M925.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M795.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M705.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M525.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M734.44 121.429a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M615.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1465.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1405.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1375.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1315.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1285.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1225.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1195.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1135.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1105.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1045.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M955.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M895.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M825.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M765.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M735.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M675.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M645.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M585.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M555.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M495.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M375.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M465.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M405.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M435.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M315.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M345.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1615.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1575.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1585.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1645.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1615.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1645.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1615.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1645.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1585.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1615.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1645.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1705.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1665.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1675.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1735.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1705.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1735.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1705.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1735.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1675.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1705.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1735.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M255.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M305.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M225.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M285.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M255.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M285.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M255.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M285.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M225.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M255.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M285.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M165.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M215.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M135.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M195.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M165.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M195.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M165.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M195.138 323.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M135.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M165.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M195.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1795.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1775.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1805.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1775.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1805.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M55.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M85.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M35.138 263.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M75.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 273.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M115.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M75.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M125.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M55.138 193.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M85.138 173.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M115.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1835.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1795.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1845.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1835.138 143.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1402.384 92.598a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M485.896 97.688a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M15.138 263.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M15.472 97.558a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1873.458 252.612a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path fill="green" d="M1871.92 92.403a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
+  <path d="m482.956 94.701-1.452-.105V71.418c0-20.615.06-23.237.537-23.714.704-.705 1.279-.678 1.974.09.52.574.56 2.603.48 23.82l-.088 23.192z" style="fill:green;fill-opacity:1;stroke:none;stroke-width:.0258141"/>
+  <circle cx="482.7" cy="48.021" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <circle cx="862.602" cy="47.552" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <circle cx="982.312" cy="47.338" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <circle cx="1013.047" cy="47.679" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <circle cx="1073.151" cy="48.021" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <circle cx="1132.571" cy="47.679" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <circle cx="1399.623" cy="47.679" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
+  <text xml:space="preserve" x="481.07" y="23.801" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="481.07" y="23.801">Overflow</tspan><tspan x="481.07" y="38.801">Left</tspan></text>
+  <text xml:space="preserve" x="862.789" y="22.391" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="862.789" y="22.391">Symbol Read</tspan></text>
+  <text xml:space="preserve" x="1017.308" y="16.271" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1017.308" y="16.271">Symbol </tspan><tspan x="1017.308" y="31.271">to Print</tspan></text>
+  <text xml:space="preserve" x="982.913" y="38.804" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="982.913" y="38.804">Write</tspan></text>
+  <text xml:space="preserve" x="1069.994" y="18.487" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1069.994" y="18.487">Move</tspan></text>
+  <text xml:space="preserve" x="1129.124" y="16.133" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1129.124" y="16.133">Dir</tspan><tspan x="1129.124" y="31.133">Left</tspan></text>
+  <text xml:space="preserve" x="1399.224" y="14.921" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1399.224" y="14.921">Overflow</tspan><tspan x="1399.224" y="29.921">right</tspan></text>
+</svg>
