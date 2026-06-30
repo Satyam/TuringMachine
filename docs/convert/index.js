@@ -5,6 +5,11 @@ const $btn = document.getElementById('convert');
 const $bytes = document.getElementById('out');
 const $results = document.getElementById('results');
 const $body = document.getElementById('tbody');
+const $showEmulator = document.getElementById('showEmulator');
+const $emulator = document.getElementById('emulator');
+
+const iframeSrc =
+  'https://circuitverse.org/simulator/embed/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true';
 
 $btn.addEventListener('click', (ev) => {
   const table = $ta.value;
@@ -56,4 +61,17 @@ $btn.addEventListener('click', (ev) => {
 
 $ta.addEventListener('keypress', (ev) => {
   $btn.disabled = $ta.value == 0;
+});
+
+$showEmulator.addEventListener('change', (ev) => {
+  if (ev.target.checked) {
+    $emulator.removeAttribute('srcDoc');
+    $emulator.setAttribute('src', iframeSrc);
+  } else {
+    $emulator.setAttribute(
+      'srcdoc',
+      'Emulator can be activated with the check box above'
+    );
+    $emulator.removeAttribute('src');
+  }
 });

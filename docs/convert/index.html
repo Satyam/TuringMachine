@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./simple.min.css" />
     <style>
+      :root {
+        --code: var(--preformatted);
+      }
+      code {
+        border: thin solid var(--border);
+        padding: 2px;
+        border-radius: 2px;
+      }
       .results td {
         white-space: nowrap;
         text-align: center;
@@ -12,6 +20,18 @@
       }
       .results th {
         text-align: center;
+      }
+      iframe {
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        width: 100%;
+      }
+      iframe[srcdoc] {
+        height: 2rem;
+      }
+      iframe[src] {
+        height: 500px;
       }
     </style>
   </head>
@@ -23,8 +43,10 @@
         href="https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0"
         >Turing Machine emulator</a
       >
-      into a series of bytes to load into the EEPROM memory of the emulator.
+      into a series of byte codes to load into the EEPROM memory of the
+      emulator.
     </p>
+    <p>Expand the instructions below when using it for the first time.</p>
     <details>
       <summary>Step by step instructions</summary>
       <p>
@@ -47,7 +69,7 @@
       <ul>
         <li>
           Everything after the first <code>#</code> in a line is ignored, like
-          the headings above
+          the headings above.
         </li>
         <li>
           There should be an entry per line, where the various parts are
@@ -62,14 +84,19 @@ B 0 - L B
 B 1 0 L B</pre
           >
         </li>
-        <li>All entries are case-insensitive</li>
+        <li>
+          All entries are case-insensitive, an <code>l</code> and an
+          <code>L</code> are just the same.
+        </li>
         <li>
           The columns are:
           <ol>
             <li>
               State: A label, any characters except <code>#</code> and spaces
-              are valid. There should be two rows with the same label for each
-              State.
+              are valid. There should be two rows with the same label, one for
+              each State. Labels are also case-insensitive so a label like
+              <code>A</code> is the same as <code>a</code>. A label cannot spell
+              the keyword <code>halt</code> as that is reserved.
             </li>
             <li>
               Symbol: Either a <code>0</code> or a <code>1</code> for the Symbol
@@ -93,30 +120,18 @@ B 1 0 L B</pre
           </ol>
         </li>
         <li>
-          When the table is entered or pasted, press the
+          When the table is keyed in or pasted from elsewhere (the most common
+          case), press the
           <code>Convert</code> button below the table to process.
         </li>
-        <li>The results will appear below, see further instructions below.</li>
+        <li>The results will appear below, along with instructions.</li>
         <li>
           Either of the sample tables above can be copied and then pasted, just
           to try it out.
         </li>
       </ul>
     </details>
-    <!--iframe
-      src="https://circuitverse.org/simulator/embed/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true"
-      style="border-width: 2px; border-style: solid; border-color: black"
-      name="myiframe"
-      id="projectPreview"
-      scrolling="no"
-      frameborder="1"
-      marginheight="0px"
-      marginwidth="0px"
-      height="500"
-      width="500"
-      allowfullscreen
-    ></iframe-->
-    <textarea id="ta" cols="60" rows="20" spellcheck="false" autocorrect="off">
+    <textarea id="ta" cols="60" rows="15" spellcheck="false" autocorrect="off">
 ##State  Symbol   Print Operation Next State
    s1      0        -       -            Halt
    s1      1        0       R            s2
@@ -131,13 +146,90 @@ B 1 0 L B</pre
     >
     <button id="convert">Convert</button>
     <div id="results" hidden>
+      <h3>Results</h3>
       <p>
-        The box below contains a sequence of numbers that can be pasted into the
-        EEPROM in the emulator. They have already been copied into the
+        The box below contains a sequence of numbers, the byte codes, that can
+        be pasted into the EEPROM in the emulator. They have already been copied
+        into the
         <i>clipboard</i>.
       </p>
       <pre id="out"></pre>
-
+      <details>
+        <summary>How to use the byte codes above</summary>
+        <ul>
+          <li>
+            You can access the emulator either by clicking the checkbox below to
+            load it in this page, or use the
+            <a
+              href="https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0"
+              >link</a
+            >
+            to use it on the CircuitVerse site.
+          </li>
+          <li>
+            In the control box on the top right corner of the emulator window,
+            click on the <code>Full Screen</code> button to make it easier to
+            visualize.
+          </li>
+          <li>In that same control box, turn the <code>Clock</code> off.</li>
+          <li>
+            Locate the EEPROM on the top right. Double click on it. A pop up
+            window from <b>CircuitVerse</b> will prompt you <b>Enter Data</b>.
+          </li>
+          <li>
+            Paste the byte code from the box above which has already been copied
+            into the <i>clipboard</i>. Click the <code>Ok</code> button.
+          </li>
+          <li>
+            The byte code will be written into memory at the position of the
+            first program. Ensure the <code>Program Select</code> input box, to
+            the left of the EEPROM is set to <code>000</code>.
+          </li>
+          <li>
+            Using the input boxes at the bottom of the page, enter the initial
+            pattern of bits to load into the tape.
+          </li>
+          <li>
+            Press the <code>Reset</code> button on the bottom left to load that
+            bit pattern into the tape and ensure all the machine is in its
+            initial condition.
+          </li>
+          <li>
+            Enable the <code>Clock</code> in the control box, on the top right
+            corner.
+          </li>
+          <li>
+            The LED on the top left labeled <code>Halted</code> will turn on
+            when the program is finished
+          </li>
+          <li>
+            The frequency of the clock can be changed at any time but will not
+            go under 50. The <code>Reset</code> button can be pressed at any
+            time to start again, even if the program is running.
+          </li>
+        </ul>
+      </details>
+      <h3>Emulator</h3>
+      <p>
+        <label>
+          <input type="checkbox" id="showEmulator" value="Show" />
+          Show the emulator in the box below or go to
+          <a
+            href="https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0"
+            >Turing Machine emulator</a
+          >
+          on CircuitVerse
+        </label>
+      </p>
+      <!--      src="https://circuitverse.org/simulator/embed/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true"-->
+      <iframe
+        srcdoc="Emulator can be activated with the check box above"
+        loading="lazy"
+        id="emulator"
+        scrolling="no"
+        allowfullscreen
+      ></iframe>
+      <h3>Expanded State table and byte codes</h3>
       <table class="results">
         <thead>
           <tr>
