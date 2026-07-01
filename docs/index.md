@@ -4,27 +4,30 @@ Description: An electronic simulation of a Turing Machine
 Date: 2026-06-20
 ---
 
-- [Work In Progress](#work-in-progress)
-  - [Description](#description)
-    - [The Machine itself](#the-machine-itself)
-      - [The State Table.](#the-state-table)
-      - [The latches](#the-latches)
-      - [The Actions](#the-actions)
-      - [The Sequencer.](#the-sequencer)
-        - [Operation of the Sequencer](#operation-of-the-sequencer)
-        - [Inside the Sequencer](#inside-the-sequencer)
-      - [A sample run](#a-sample-run)
-      - [Converting the States Table to byte codes](#converting-the-states-table-to-byte-codes)
-      - [Possible Machine improvements](#possible-machine-improvements)
-- [The section below is still a draft.](#the-section-below-is-still-a-draft)
-    - [The *tape*](#the-tape)
-  - [Operation](#operation)
+- [Description](#description)
+  - [The Machine itself](#the-machine-itself)
+    - [The State Table.](#the-state-table)
+    - [The latches](#the-latches)
+    - [The Actions](#the-actions)
+    - [The Sequencer.](#the-sequencer)
+      - [Operation of the Sequencer](#operation-of-the-sequencer)
+      - [Inside the Sequencer](#inside-the-sequencer)
+    - [A sample run](#a-sample-run)
+    - [Converting the States Table to byte codes](#converting-the-states-table-to-byte-codes)
+    - [Possible Machine improvements](#possible-machine-improvements)
+  - [The *tape*](#the-tape)
+- [Operation](#operation)
   - [Programs](#programs)
-  - [Stretching the tape](#stretching-the-tape)
+    - [000: Copy](#000-copy)
+    - [001: Busy Beaver](#001-busy-beaver)
+    - [010: An alternate copy](#010-an-alternate-copy)
+    - [011: Overflow right](#011-overflow-right)
+    - [100: Overflow left](#100-overflow-left)
+    - [Custom programs](#custom-programs)
+- [Stretching the tape](#stretching-the-tape)
 
-Also: [Converter](./convert/index.html)
 
-# Work In Progress
+Appendix: [Converter](./convert/index.html)
 
 A Turing Machine is an theoretical machine devised by the British scientist [Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing) for the purpose of proving basic principles of automated data processing.  See the Wikipedia article on the [Turing Machine](https://en.wikipedia.org/wiki/Turing_machine) for further explanation.
 
@@ -73,6 +76,8 @@ The copy program will locate the first group of consecutive `1` symbols to the l
 The circuit in the [on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) is made of two distinct sections.  The upper half is the Turing Machine itself. The bottom part is the *tape* which the Machine is supposed to manipulate.  The *tape* in the theoretical Machine should be infinite, which is not possible for actual machines.  In the emulator, the copy program will work with up to four `1`s, but it will overflow with five or more.
 
 The following sections describe, the *Machine*, which is the top of the the full circuit in [the on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) followed by the *tape* which is the bottom half ot that circuit.   
+
+The complete circuit has same extra features mostly to check its operation and for debugging.  There are several labeled boxes all around showing the values at different points in the circuit and also a counter labeled `Step` to keep track of its operation.  Since they do not affect the operation, they have been omitted from the images and descriptions below.
 
 ### The Machine itself
 
@@ -268,87 +273,188 @@ These are some examples of things that could be improved:
 * The gaps in between the active steps of the *sequencer* could be reduced from a full clock cycle to a very short delay, for example, by chaining two NOT gates in between the active DFFs, relying on the gate delay of the gates instead of counting a full clock cycle doing nothing.   This would also require having every other of the active DFFs triggered by the inverted clock signal.  This would likely quadruple the speed of the circuit for the same clock speed as each step would take half a clock cycle instead of two full clock cycles, one active and one for the gap.
 
 
----
-# The section below is still a draft.
-
 ### The *tape* 
 
 ![The tape](./img/Tape.svg)
 
-The tape is at the bottom made up of two sub-circuits, one for the main  cell (the one in the middle) called the Head since there is where the read/write head is and any number of extra cells at either side.   
+The image above shows a streamlined version of the take which makes the bottom half of the actual emulator circuit.  Wiring has been untangled and the wires that connect to the Machine itself show red dots with labels on them.  
 
-There are two further cells, one at each end, that are the Overflow cells.  If a program pushes the 1s in the cells past the end, they will light and halt the machine.
+The tape is made up of two main sub-circuits, one for the *Head Cell*, the wide one in the middle, where the read/write head would be in an actual paper tape, and any number of extra cells at either side.   Those would be the parts of the paper tape that go around rolls on each side.
 
-Cells are designed so that they can be connected on its sides to its neighbors.  The cells, obviously don't move (like in a real tape) but its contents do.  Zeros are shifted in from the left and right as if the tape has no further marks at either end. 
+There are two further cells, one at each end, that are the Overflow cells.  If a program pushes the `1`s in the cells past the end, they will light and halt the machine.
 
-An ideal Turing Machine should have and infinite tape, which is not realistically possible so, when the tapes moves, bits might spill over the ends.  If this happens, the LEDs at either end will light up and the whole machine will be halted so you can check what happened.  
+All the cells contain a D-type Flip Flop or DFF, just as the [Sequencer](#the-sequencer) discussed above. Bits jump from the DFF in one cell to the DFF in the next cell whenever the *tape* is *moved*.  The circuitry inside simply ensures that the bit either comes from the data pin connected to either the left or right depending on which way it moves, and it is triggered if and when it should.  The various *Tape Cell* sub-circuits can be seen in the emulator by clicking on the buttons at the top of the emulator window.  
 
-There is a LED labeled Halted to the center left.  If it lights up it means the program is halted.  If the LEDs at either end of the tape are off, then it is a successful stop.  If either is lit, there was an overflow. 
+Each cell is mostly a lot of wiring, which would be hard to describe.  The output of the DFF has to go to each neighboring cell and to the LED and, in the case of the *Head Cell* it has to go out to reach the Machine above.  The input must either come from the left or right neighbor. Each cell is mostly a DFF and wiring going and coming from lots of pins.
 
-Labeled boxes are all around showing the values at different points in the circuit.  They are for debugging purposes and do not affect the operation. 
+The cells, obviously don't move (like in a real tape) but their contents do.  Each cell has pins on the sides which connect to matching pins on the neighboring.  Thus, the pin `DOutL` (Data Out Left) on the left side of a cell connects to the pin `DInR` (Data in Right) on the right edge of the cell to its left, and so do `DOutR` with `DInL`.   The only exceptions are the two Overflow cells since they only connect to other cells on one side.  Those connections are the ones that allow the pins to move from one cell to its neighbor in either direction.
 
-There is a simple sequencer that pulses for each of the four steps for each cycle
+The top edge of the cells connect to wires running all across the circuit carrying common control signals for all of them, namely:
 
-1. Read the symbol at the head.
-1. Print a new value, or leave it like it is.
-1. Move the tape left or right
-1. Jump to the new state
+* `DirL`: the `DirL` pins of all cells go to the red dot labeled `Dir Left` which eventually goes to the `DirL` signal split from the program memory output.
+* `Move`: They all go to the red dot labeled `Move` which comes from an AND gate in the circuit above and is the result of the corresponding bit in the program memory output AND the `Move` pin of the *Sequencer*.
+* `Reset`: It connects to the `Reset` button, which I duplicated here, though there is actually just one `Reset` button for both halves.
 
-The states are stored in the EEPROM on the top-right.  It has plenty of memory for multiple programs.  The memory addresses are split like this:
+These apply to all cells at once.  If the tape *moves* the contents of all cells shift at once.  If they are reset, they are all reset at once.
 
-  
-The output of the memory is used to command the actions of the machine,
+Since all the reading and writing on the tape occurs at the *Head* there are several signals that connect wide cell at the middle of the *tape*, they are:
 
-* Next State: 6 bits, the state that follows the current one.  The state 0x3f or decimal 63 (all bits one) is reserved for HALT, which means the program has finished.
-* Print: The symbol (0 or 1) to print on the tape at the current location
-* DirL: Direction to move the tape.  0 means right, 1 means left
-* Write: If 1, the value in Print is actually printed on the tape, if 0, it is left as-is.
-* Move: Likewise, the tape is not always moved so this bit says if it moves and DirL tells which way.
-  
+* `Symbol Read`: which through the red dot connect to the `Symbol Read` DFF on the Machine.
+* `Symbol To Print`: which comes from the corresponding bit split out of the program memory output.  Whether it does happen depends on the next signal.
+* `Write`: It comes from the AND gate in the Machine which turns on when the `Write` signal split from the program memory AND the `Write` pin on the *Sequencer* are both on.
+
+An ideal Turing Machine should have an infinite tape, which is not realistically possible so, when the tapes moves, bits might spill over the ends.  If this happens, the program would fail.  That is what the end cells are there for, their LEDs will light up and the whole machine will be halted if there is an overflow.  
+
+The end cells only connect to the other cells on one of the edges.  The other edge just has a `halt` pin which signals that an overflow has occurred, that is, a `1` reaching either end is expected to move out, dropping out of the end of the *tape*. Both of these signals connect through their respective red dots and eventually combine to reach the *Sequencer* along the `Halt` action from the program.
+
+End cells will always *move* zeros out to their neighbors, as if the virtual paper tape was blank beyond the cells in the circuit.
+
+The bottom of most of the cells have two pins:
+
+* `LED`: Though each cells has a LED to show the *symbol* they contain, the LED cannot be drawn in the sub-circuit along the DFF because it wouldn't show.  Sub-Circuits are opaque, they show nothing of their inner workings.  Thus, each cell needs a pin for the LED to connect to. By placing the pin on the bottom edge, the LED can overlap the box representing the cell as if it were part of it.
+* `InitVal`: They connect to input boxes right below, which allow initial values to be set.  If you have a copy program, you have to set an initial set of cells set to `1` to copy.  Other programs don't need any setup.  The initial values set in the input boxes will get loaded in the DFF of each cell when the `Reset` signal comes in.
+
+Cells are designed so that they can be connected on its sides to its neighbors. Zeros are shifted in from the left and right as if the tape has no further marks at either end. 
+
 ## Operation
 
-Select a program to run with the input box pointed at by the red arrow labeled  Program Select.
+The operation of the Machine is quite simple. It is recommended to have the emulator window on `Full Screen` mode, using the button on the small control box on the top right.  Also, turning the `Clock` off avoids *noise*.
 
-Select the initial values for the tape in the boxes at the bottom of the screen, pointed at by the arrow labeled Initial Values.
+* Select a program to run with the three bit input box to the left of the program memory pointed at by the red arrow labeled  `Program Select`.  The list of programs available is below.
+* If the program selected expects a certain pattern of bits, set it up via the single bit input boxes under each cell.  Changing the initial values will not immediately change the LEDs.
+* Press the `Reset` button.  The cells will read the initial values set in the previous step and turn their LEDs accordingly.
+* From the control box on the top right you may change the `Clock Time`.  To actually follow its operation in detail, the default of 500ms is fine.  This will also allow time to start/stop the clock to go step by step.  The 50ms is the shortest clock cycle and the fastest it will run.
+* Turn the `Clock` on.  You may pause the clock at any time.
+* If the LED labeled `Halted` turns on, the program would have reached its end.  Check that neither of the LEDs at the ends of the tape are on, this would indicate an overflow error, that is, the program run out of tape.  The Clock will remain ticking but the *Sequencer* will freeze and the circuit won't change any further.
+* The `Reset` button can be pressed at any time to restart the simulation, there is no need to wait for the end of the program.  
+* Likewise, the clock can be turned on and off at any time to pause the operation.  The Clock Time can also be changed at any time.
 
-Press the Reset button to the bottom left.
+### Programs
 
-Program has finished when the red Halted LED turns on.  Check the LEDs at both ends of the tape to make sure it hasn't overflowed.
+The following sections lists the programs already recorded in the program memory.  The listing shows the bit pattern to be entered in the `Program Select` input box and a name.
 
-You may restart the program at any time with the Reset button.
+#### 000: Copy
 
-## Programs
+Copied from  [Wikipedia](https://en.wikipedia.org/wiki/Turing_machine_examples#A_copy_subroutine) it will copy a certain number of consecutive *marks* (LEDs on) on the tape. 
 
-* 000: Copy.  Set a pattern of up to four consecutive 1s from the central Head cell of the tape to the left.  The program will create a copy of the set. The limitation of 4 is because the tape is not infinite as it theoretically should.  With more than four 1s, it will overflow on the right.
+Since the tape is not infinite, as it would in a theoretical Machine, the emulator only accepts up to four *marks*, otherwise it will overflow.   If there are no *marks* in the tape, it will halt immediately.
 
-* 001: Busy Beaver: Set all the initial values to 0.  The program will weave its way to produce 6 consecutive cells on.
+Set a pattern of up to four consecutive `1`s starting from the central *Head Cell* to its left.  
 
-* 010: An alternate copy, it allows 1s to be anywhere to the left of the Head.  It just has an extra state at the start that moves the tape to the right when it sees a 0 and goes to the same copy algorithm at 000 when it reaches the first 1.
+At the end, there will be two sets of consecutive *marks* on each side of the *Head Cell* which will have a blank.
 
-* 011: Test that the machine detects an overflow on the right.  The machine will be halted with the rightmost LED on.
+```
+##State  Symbol   Print   Move     Next State
+   s1      0        -       -            Halt
+   s1      1        0       R            s2
+   s2      0        0       R            s3
+   s2      1        1       R            s2
+   s3      0        1       L            s4
+   s3      1        1       R            s3
+   s4      0        0       L            s5
+   s4      1        1       L            s4
+   s5      0        1       R            s1
+   s5      1        1       L            s5
+```
 
-* 100: Test that the machine detects an overflow on the left.  The machine will be halted with the leftmost LED on.
+#### 001: Busy Beaver 
 
-The first two programs were taken from the Wikipedia article: [Turing machine examples](https://en.wikipedia.org/wiki/Turing_machine_examples)
+Also from [Wikipedia](https://en.wikipedia.org/wiki/Turing_machine_examples#3-state_Busy_Beaver), the program starts writing a *mark* under the *Head Cell* and then adds a *mark* on one side, and then another *mark* on the other side and so on. It is like a beaver building a dam and reinforcing it by adding *marks* on either side. Since the *Head Cell* can't move as the beaver would, it is the *tape* or the LEDs in the cells that move left and right.  
 
-It is better to go Full Screen and select a clock speed of about 50, with the default value of 500 it takes too long.
+It will stop once the *dam* is 6 *marks* wide.
+
+For this program set all the initial values to 0.  
+
+```
+##State  Symbol   Print   Move    Next State
+   A        0       1       L         B
+   A        1       1       R         C
+   B        0       1       R         A
+   B        1       1       L         B
+   C        0       1       R         B
+   C        1       1       -         Halt
+```
+
+#### 010: An alternate copy
+
+The original [Copy](#000-copy) program requires the right most *mark* on the tape to be under the *Head Cell*.  This version also allows the group of bits to be anywhere to its left.  
+
+The program does not allow the *marks* to be to the right of the head since the Machine would start looking for the pattern to copy to its left an, since it wouldn't find it, it would go on forever.  The program has no way of deciding that it has gone far enough in one direction and give up and go searching in the other direction.  
+
+To start, set the input boxes for the initial values with the pattern of up to 4 bits of *marks* just like in the [Copy](#000-copy) program above, or to its left.
+
+The state table simply has an initial `s0` state where it goes searching for the first `1` symbol.  If it finds a `0` it moves the tape right but if it finds a `1` it goes to the `s1` state, which was the initial state in the original copy program.
+
+It also has more `-` signs in the print column when the original program where the symbol to be printed is the same as the one already on the cell.  In the [Possible Machine improvements](#possible-machine-improvements) section above, the speed could be improved by having the *Sequencer* skip the `Print` step if there is no printing to be done.  Thus, a clear `-` (no print) would speed it up.  Anyway, the program in the [Convert](./convert/index.html) page already detects this and does the change on its own.
+
+```
+##State  Symbol   Print   Move    Next State
+   s0      0        -       R            s0
+   s0      1        -       -            s1
+   s1      0        -       -            Halt
+   s1      1        0       R            s2
+   s2      0        -       R            s3
+   s2      1        -       R            s2
+   s3      0        1       L            s4
+   s3      1        -       R            s3
+   s4      0        -       L            s5
+   s4      1        -       L            s4
+   s5      0        1       R            s1
+   s5      1        -       L            s5
+```
+
+#### 011: Overflow right
+
+A simple program that will write a `mark` and then keep moving it right until it overflows.  It was simply meant to test the detection circuit.
+
+The table is also an example of how compact a *State Table* can be.  
+
+This program doesn't need any set up.  There can be *marks* on the tape or none at all, it will still overflow.
+
+
+
+```
+A 0 1 R B
+A 1 - R B
+B 0 - R B
+B 1 0 R B
+```
+
+#### 100: Overflow left
+
+The same program but in the other direction.  All the `R`s have been replaced by `L`s.
+
+```
+A 0 1 L B
+A 1 - L B
+B 0 - L B
+B 1 0 L B
+```
+
+#### Custom programs
+
+Using the Convert program as described in [Converting the States Table to byte codes](#converting-the-states-table-to-byte-codes) will produce a bunch of bytes that can be loaded into the program memory.  Those programs will replace the [first program](#000-copy), thus the `Program Select` input must be set to `000`.   However, this change will not be saved.  If you reload the emulator, the original programs will be restored. 
+
+As an exercise, the [Alt Copy](#010-an-alternate-copy) program could be improved to locate the set of *marks* on either side of the head.  Borrowing from the [Busy Beaver](#001-busy-beaver) program, instead of blindly going left possibly forever, it might go in one direction and place a *mark* wherever it has reached.  Then move the other way and, if nothing is found,  place a *mark* at the other end of its search. It could go on in this fashion going back and forth looking for *marks* beyond the first *mark* which signaled how far it had searched before and moving those marks further and further away.
 
 ## Stretching the tape
 
-To change the circuit you will have to clone the project as the original cannot be edited. 
+Some program might require a lengthier tape.  Cells can be added to the circuit in the emulator.
+
+To change the circuit you will have to clone the project as the original cannot be edited, which requires you to sign up as a user.
 
 To extend the tape, select and drag either end cell away to make space for the cells to be inserted.  Make sure to move it horizontally so the connecting wires don't get tangled.
 
-Delete the wires on the side that connects it to its neighbor.  There is no need to delete the wires coming from above.
+As you move the end cell away, you will see the hidden wires that connected the two cells together. Delete those wires.  There is no need to delete the wires coming from above.
 
-Select any of the intermediate cells by clicking on it (not the main one, nor the end ones) copy it and paste it in any empty space.  This is because it is hard to paste it in the right place at once.  Select that copy and the drag it until the edges of the added cell touch the existing tape.  You may paste and drag as many copies as you want.  Then, drag the end cell you moved aside so it touches the last added cell.   Once again, move it horizontally so the wires don't get messed up.
+Select any of the intermediate cells by clicking on it (not the main one, nor the end ones) copy it and paste it in any empty space.  This is because it is hard to paste it in the right place at once.  Select that copy and drag it until the edges of the added cell touch the existing tape.  Ensure the new cells end up with its edge, and the pins on it match the pins on the existing cells.
 
-Draw the bus wires from above the new cells (DirL, Move and Reset) to the connecting points on the top edge.
+You may paste and drag as many copies as you want.  Then, drag the end cell you moved aside so it touches the last added cell.   Once again, move it horizontally so the wires don't get messed up.
+
+Draw the bus wires from above the new cells (`DirL`, `Move` and `Reset`) to the connecting points on the top edge.
 
 Select any of the existing LEDs and copy and paste it anywhere empty.  Then select it again and drag it so it plugs into the connection labeled LED in the added cells.
 
 If you want your cells to eventually get initial values set, copy the input boxes from anywhere.
 
-There can only be one Main Cell and one of either type of end cells at the left and right edges. All the cells except for those are exactly the same.
-
-As an alternative, you may do a multiple select by dragging a selection box starting from an empty space and with the shift key pressed, enclosing both the cell, the LED inside and the Initial Value box bellow so, when you paste the new cells into the circuit, the LED and the input box goes with it.  Likewise you may use the multiple select to pick more than one cell (and its LEDs and input boxes) and copy and paste them all at once. 
+There can only be one *Head Cell* and one of each type of end cells at the ends of the tape. All the cells except for those are exactly the same.
