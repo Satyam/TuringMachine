@@ -54,7 +54,7 @@
       </p>
       <p>The <b>State Table</b> might look like the following</p>
       <pre>
-##State  Symbol   Print Operation Next State
+##State  Symbol   Print    Move     Next State
    s1      0        -       -            Halt
    s1      1        0       R            s2
    s2      0        0       R            s3
@@ -73,11 +73,10 @@
         </li>
         <li>
           There should be an entry per line, where the various parts are
-          separated by one or more blank spaces or tabs. There is no particular
+          separated by one or more blank spaces or tabs. There is no further
           formatting required, the following table, more compact than the
           example above, is just as good.
           <pre>
-# Overflow left
 A 0 1 L B
 A 1 1 L B
 B 0 - L B
@@ -131,19 +130,15 @@ B 1 0 L B</pre
         </li>
       </ul>
     </details>
-    <textarea id="ta" cols="60" rows="15" spellcheck="false" autocorrect="off">
-##State  Symbol   Print Operation Next State
-   s1      0        -       -            Halt
-   s1      1        0       R            s2
-   s2      0        0       R            s3
-   s2      1        1       R            s2
-   s3      0        1       L            s4
-   s3      1        1       R            s3
-   s4      0        0       L            s5
-   s4      1        1       L            s4
-   s5      0        1       R            s1
-   s5      1        1       L            s5</textarea
-    >
+    <blockquote>Reminder: State Symbol Print Move NextState</blockquote>
+    <textarea
+      id="ta"
+      cols="60"
+      rows="15"
+      spellcheck="false"
+      autocorrect="off"
+      placeholder="Type or paste a State Table.&#10;You may copy one of the sample tables from above."
+    ></textarea>
     <button id="convert">Convert</button>
     <div id="results" hidden>
       <h3>Results</h3>
@@ -221,7 +216,6 @@ B 1 0 L B</pre
           on CircuitVerse
         </label>
       </p>
-      <!--      src="https://circuitverse.org/simulator/embed/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0?theme=default&display_title=false&clock_time=true&fullscreen=true&zoom_in_out=true"-->
       <iframe
         srcdoc="Emulator can be activated with the check box above"
         loading="lazy"
@@ -234,8 +228,13 @@ B 1 0 L B</pre
         <thead>
           <tr>
             <th colspan="5">State table</th>
-            <th rowspan="2">Address</th>
-            <th rowspan="2">Bits</th>
+            <th
+              colspan="3"
+              title="The memory address, split into its components"
+            >
+              Memory Address
+            </th>
+            <th rowspan="2">Memory Data</th>
             <th colspan="5">Broken down</th>
           </tr>
           <tr>
@@ -244,6 +243,17 @@ B 1 0 L B</pre
             <th>Print</th>
             <th>Move</th>
             <th>Next</th>
+            <th
+              title="This is the value that goes into the Program Select input box, &#10;always zero for custom programs"
+            >
+              Program
+            </th>
+            <th
+              title="Represented as the base address of where the two entries for the state are stored"
+            >
+              State
+            </th>
+            <th title="There is an entry for symbols 0 and 1">Symbol</th>
             <th>DirL</th>
             <th>Print</th>
             <th>Move</th>
