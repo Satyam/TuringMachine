@@ -12,19 +12,35 @@ const rxSep = /\s+/;
 const rxSymbol = /^[01]$/;
 const rxPrint = /^[01\-]$/;
 const rxMove = /^[lr\-]$/i;
+
+/**
+ * Parses and validates a States Table
+ * and returns an array of objects with the values of those entries.
+ *
+ * @param {String} statesTable - States table as a string
+ * @returns {Array} The parsed table as an array of objects.
+ * @throws {Error} Various syntax errors.
+ */
 export function parseTable(statesTable) {
-  const states = {};
+  // A Map is used because it ensures the first item in the states table goes into the very first position in memory.
+  // It also allows for all the entries for a state to be together and ordered in memory.
+  const statesMap = new Map();
 
   statesTable
-    .split('\n')
-    .map((line) => line.split('#')[0].trim())
-    .filter((line) => line.length)
-    .forEach((line, i) => {
+    .split('\n') // Break table into lines
+    .map((line) => line.split('#')[0].trim()) // discard comments
+    .filter((line) => line.length) // discard empty lines
+    .forEach((line, lineNum) => {
       try {
-        const [state, symbol, print, move, next] = line
-          .trim()
-          .toLowerCase()
-          .split(/\s+/);
+        const [state, sbl, print, move, next] = line // pick up the parts of the line
+          .trim() // which has been trimmed
+          .toLowerCase() // all entries turned into lower case
+          .split(/\s+/); // line split into fields at blank spaces
+
+        // Turn the strings '0' and '1' into actual numbers.
+        const symbol = parseInt(sbl, 10);
+
+        // some validations using regular expressions above
         if (!rxSymbol.test(symbol)) {
           throw new Error(`Symbol must be either 0 or 1, found ${symbol}`);
         }
@@ -37,70 +53,114 @@ export function parseTable(statesTable) {
           );
         }
 
-        if (!(state in states)) {
-          states[state] = [];
+        // If no entries array exists in the `statesMap`, create one
+        if (!statesMap.has(state)) {
+          statesMap.set(state, []);
         }
-        const sts = states[state];
-        if (sts[parseInt(symbol)]) {
+
+        const stateEntries = statesMap.get(state);
+
+        // Eventually, those lines can be replaced by a single
+        //  const stateEntries = statesMap.getOrInsert(state,[]);
+        // But it is not yet fully supported
+
+        // Check there is not already an entry for the symbol read
+        // Duplicates are not allowed
+        if (stateEntries[symbol]) {
           throw new Error(`duplicate symbol ${symbol} for state ${state}`);
         }
-        sts[parseInt(symbol)] = [print, move, next, line, i];
+
+        // Enter all the information for that entry in the states table.
+        stateEntries[symbol] = {
+          state,
+          symbol,
+          print,
+          move,
+          next,
+          // The following two are added for reference in error messages
+          line,
+          lineNum,
+        };
       } catch (err) {
-        throw new Error(`${err.message}  in line \n[${i + 1}]: ${line}`);
+        // Re-throw the error with extra info
+        throw new Error(`${err.message}  in line \n[${lineNum + 1}]: ${line}`);
       }
     });
-  for (const [state, entries] of Object.entries(states)) {
+
+  // Checks that can only be done once the full table is collected
+  statesMap.forEach((entries) => {
+    // Ensure there are always two symbols per state
     if (entries.length !== 2) {
-      const [print, move, next, line, i] = entries.pop();
+      const { line, lineNum } = entries[0];
       throw new Error(
-        `There must always be two entries per symbol, found only this: \n[${i + 1}]: ${line} `
+        `There must always be two entries per symbol, found only this: \n[${lineNum + 1}]: ${line} `
       );
     }
-    for (const [print, move, next, line, i] of entries) {
-      if (next !== 'halt' && !(next in states)) {
+
+    // Ensure that all `next` entries point to declared states
+    // Skip on `halt`.
+    for (const { next, line, lineNum } of entries) {
+      if (next !== 'halt' && !statesMap.has(next)) {
         throw new Error(
-          `Next state ${next} not found in table in\n[${i + 1}]: ${line} `
+          `Next state ${next} not found in table in\n[${lineNum + 1}]: ${line} `
         );
       }
     }
-  }
-  return states;
+  });
+
+  // No further need for a Map from here on
+  // It can be returned as an array
+  return Array.from(statesMap.values()).flat();
 }
 
-export function generateBytes(states) {
-  const keys = Object.keys(states);
-  return keys
-    .map((k) => {
-      return states[k].map(([print, move, next, line], symbol) => {
-        let byte = 0;
-        if (next === 'halt') {
-          byte = bitPatterns.halt;
-        } else {
-          switch (print) {
-            case '0':
-              byte += bitPatterns.printZero + bitPatterns.write;
-              break;
-            case '1':
-              byte += bitPatterns.printOne + bitPatterns.write;
-              break;
-            case '-':
-              break;
-          }
-          switch (move) {
-            case 'l':
-              byte += bitPatterns.dirLeft + bitPatterns.move;
-              break;
-            case 'r':
-              byte += bitPatterns.dirRight + bitPatterns.move;
-              break;
-            case '-':
-              break;
-          }
-          byte += keys.indexOf(next);
-        }
+/**
+ * Converts the states table into a string of byte codes to upload to the emulator
+ * @param {Array} statesArray - As produced by `parseTable`
+ * @returns {String} Byte codes to upload to the emulator
+ */
+export function generateBytes(statesArray) {
+  return statesArray.map(({ state, symbol, print, move, next }) => {
+    // This is where it will be assembled
+    let byte = 0;
 
-        return byte;
-      });
-    })
-    .flat();
+    // If the new state is a halt, the other bits don't really matter
+    if (next === 'halt') {
+      byte = bitPatterns.halt;
+    } else {
+      // Process the pint part
+      // Only order to write the new symbol if it is different from the existing one
+      switch (print) {
+        case '0':
+          if (symbol == 1) byte += bitPatterns.printZero + bitPatterns.write;
+          break;
+        case '1':
+          if (symbol == 0) byte += bitPatterns.printOne + bitPatterns.write;
+          break;
+        case '-':
+          break;
+        // default:  no need to contemplate any other alternative since the table has already been validated.
+      }
+
+      // Do the moving, if it needs to
+      switch (move) {
+        case 'l':
+          byte += bitPatterns.dirLeft + bitPatterns.move;
+          break;
+        case 'r':
+          byte += bitPatterns.dirRight + bitPatterns.move;
+          break;
+        case '-':
+          break;
+        // default:  no need to contemplate any other alternative since the table has already been validated.
+      }
+
+      // This searches the `statesArray` for a `state` matching the `next` state
+      // It tries to find the index, which corresponds to the memory address in program memory,
+      // Since there are two addresses for each `state`, one for each of two `symbol`s
+      // it divides the index by two.
+      byte += statesArray.findIndex(({ state }) => state === next) / 2;
+    }
+
+    return byte;
+  });
 }
