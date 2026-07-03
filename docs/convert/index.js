@@ -18,7 +18,7 @@ $btn.addEventListener('click', (ev) => {
   }
   try {
     const states = parseTable(table);
-    console.dir(states);
+    // console.dir(states);
     const bytes = generateBytes(states);
     $bytes.innerHTML = bytes;
     try {
@@ -27,11 +27,9 @@ $btn.addEventListener('click', (ev) => {
       alert(error.message);
     }
     const b = [];
-    for (const [state, entries] of Object.entries(states)) {
-      for (const [symbol, [print, move, next, line, i]] of Object.entries(
-        entries
-      )) {
-        const byte = bytes[b.length];
+    states.forEach(
+      ({ state, symbol, print, move, next, line, lineNum }, addr) => {
+        const byte = bytes[addr];
         b.push(
           `<tr>
             <td>${state}</td>
@@ -39,8 +37,13 @@ $btn.addEventListener('click', (ev) => {
             <td>${print}</td>
             <td>${move}</td>
             <td>${next}</td>
-            <td>000 ${i.toString(2).padStart(6, '0')} ${symbol}</td>
+
+            <td>000</td>
+            <td>${(addr >> 1).toString(2).padStart(6, '0')}</td>
+            <td>${symbol}</td>
+
             <td>${byte.toString(2).padStart(10, '0')}</td>
+            
             <td>${byte & bitPatterns.dirLeft ? 1 : 0}</td>
             <td>${byte & bitPatterns.printOne ? 1 : 0}</td>
             <td>${byte & bitPatterns.move ? 1 : 0}</td>
@@ -49,7 +52,7 @@ $btn.addEventListener('click', (ev) => {
           </tr>`
         );
       }
-    }
+    );
 
     $body.innerHTML = b.join('\n');
     $results.hidden = false;
