@@ -7,7 +7,7 @@ Date: 2026-06-20
 - [Description](#description)
   - [The Machine itself](#the-machine-itself)
     - [The State Table.](#the-state-table)
-    - [The latches](#the-latches)
+    - [The Latches](#the-latches)
     - [The Actions](#the-actions)
     - [The Sequencer.](#the-sequencer)
       - [Operation of the Sequencer](#operation-of-the-sequencer)
@@ -73,7 +73,7 @@ The copy program will locate the first group of consecutive `1` symbols to the l
 
 ## Description
 
-The circuit in the [on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) is made of two distinct sections.  The upper half is the Turing Machine itself. The bottom part is the *tape* which the Machine is supposed to manipulate.  The *tape* in the theoretical Machine should be infinite, which is not possible for actual machines.  In the emulator, the copy program will work with up to four `1`s, but it will overflow with five or more.
+The circuit in the [on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) is made of two distinct sections.  The upper half is the Turing Machine itself. The bottom part is the *tape* which the Machine is supposed to manipulate.  The *tape* in the theoretical Machine should be infinite, which is not possible for actual machines.  In the emulator, the copy program will work with up to four `1`s, but it will overflow, i.e. *run out of tape*, with five or more.
 
 The following sections describe, the *Machine*, which is the top of the the full circuit in [the on-line emulator](https://circuitverse.org/users/393554/projects/turing-machine-68b18b14-174b-450a-bf01-8f8b94b983d0) followed by the *tape* which is the bottom half ot that circuit.   
 
@@ -111,7 +111,7 @@ There are *splitters* in the *buses* coming out of the memory, which have number
 
 The *splitter* to the left, the one for the address has the 3 bits `7` to `9` from the program selector, the next from `1` to `6` represent the *state* and the `0` at the top, the least significant bit, is for the *symbol* read from the head.
 
-#### The latches
+#### The Latches
 
 Since the *tape* moves, it is not safe to use the *symbol* straight from the head as the tape may move, instead, both the *symbol* and the current *state* are held on or *latched* into two D-type flip-flops (or DFFs) labeled `Symbol Read` and `State`.   DFFs are simple circuits which store just 1 bit or set of bits.  It doesn't have addresses like RAM or ROM memories since they hold just one bit or set of bits.  The `Symbol Read` DFF holds just 1 bit, the *symbol*, while the *state* DFF holds 6 bits.  It would be nice if CircuitVerse showed a single-bit DFF different from a multi-bit DFF like the *state*, perhaps like a deck of stacked playing cards.
 
@@ -258,6 +258,8 @@ In other words, when it finds a `1` instead of keep moving the *tape* right, it 
 #### Converting the States Table to byte codes
 
 It would be tedious to convert the *State Table* into the series of bits required by the machine.  A [Converter](./convert/index.html) is available to play with.   To make it easier to use on a regular basis, the instructions are collapsed. Do expand them the first time around.
+
+The script for the program that does the conversion can be seen in [GitHub](https://github.com/Satyam/TuringMachine/blob/main/docs/src/table2bytes.mjs) along the source for this whole site.
 
 
 #### Possible Machine improvements
