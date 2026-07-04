@@ -12,6 +12,6 @@ The online version above has some extras useful in development and debugging tha
 
 To make them visible, all the LEDs have been colored as if they were on otherwise they fade into the background. This configuration of LEDs would be hard to achieve.
 
-A more detailed description can be found in [this project site](satyam.github.io/TuringMachine).
+A more detailed description can be found in [this project site](https://new.satyam.com.ar/TuringMachine/).
 
 
