@@ -2,7 +2,7 @@
 name: Copy
 setup: X[x]
 ---
-##State  Symbol   Print Operation Next State
+##State  Symbol   Print   Move     Next State
    s1      0        -       -            Halt
    s1      1        0       R            s2
    s2      0        0       R            s3
@@ -18,7 +18,7 @@ setup: X[x]
 name: Busy_Beaver
 org: 0x80
 ---
-##State  Symbol   Print Operation Next State
+##State  Symbol   Print   Move    Next State
    A        0       1       L         B
    A        1       1       R         C
    B        0       1       R         A
@@ -31,7 +31,7 @@ name: Alt Copy
 setup: Xx-[-]
 org: 0x100
 ---
-##State  Symbol   Print Operation Next State
+##State  Symbol   Print   Move    Next State
    s0      0        -       R            s0
    s0      1        -       -            s1
    s1      0        -       -            Halt

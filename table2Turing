@@ -5,11 +5,11 @@ const CHUNK_SIZE = 128;
 
 const bitPatterns = {
   write: 1 << 6,
-  move: 1 << 7,
-  dataOne: 1 << 8,
-  dataZero: 0,
-  dirRight: 0,
-  dirLeft: 1 << 9,
+  symbolOne: 1 << 7,
+  symbolZero: 0,
+  move: 1 << 8,
+  Right: 0,
+  Left: 1 << 9,
   halt: 0b111111,
 };
 
@@ -143,20 +143,20 @@ function generatePlain(parsed) {
         } else {
           switch (print) {
             case '0':
-              byte += bitPatterns.dataZero + bitPatterns.write;
+              byte += bitPatterns.symbolZero + bitPatterns.write;
               break;
             case '1':
-              byte += bitPatterns.dataOne + bitPatterns.write;
+              byte += bitPatterns.symbolOne + bitPatterns.write;
               break;
             case '-':
               break;
           }
           switch (op.toLowerCase()) {
             case 'l':
-              byte += bitPatterns.dirLeft + bitPatterns.move;
+              byte += bitPatterns.Left + bitPatterns.move;
               break;
             case 'r':
-              byte += bitPatterns.dirRight + bitPatterns.move;
+              byte += bitPatterns.Right + bitPatterns.move;
               break;
             case '-':
               break;

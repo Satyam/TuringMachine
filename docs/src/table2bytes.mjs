@@ -1,10 +1,10 @@
 export const bitPatterns = {
   write: 1 << 6,
-  move: 1 << 7,
-  printOne: 1 << 8,
-  printZero: 0,
-  dirRight: 0,
-  dirLeft: 1 << 9,
+  symbolOne: 1 << 7,
+  symbolZero: 0,
+  move: 1 << 8,
+  Right: 0,
+  Left: 1 << 9,
   halt: 0b111111,
 };
 
@@ -131,10 +131,10 @@ export function generateBytes(statesArray) {
       // Only order to write the new symbol if it is different from the existing one
       switch (print) {
         case '0':
-          if (symbol == 1) byte += bitPatterns.printZero + bitPatterns.write;
+          if (symbol == 1) byte += bitPatterns.symbolZero + bitPatterns.write;
           break;
         case '1':
-          if (symbol == 0) byte += bitPatterns.printOne + bitPatterns.write;
+          if (symbol == 0) byte += bitPatterns.symbolOne + bitPatterns.write;
           break;
         case '-':
           break;
@@ -144,10 +144,10 @@ export function generateBytes(statesArray) {
       // Do the moving, if it needs to
       switch (move) {
         case 'l':
-          byte += bitPatterns.dirLeft + bitPatterns.move;
+          byte += bitPatterns.Left + bitPatterns.move;
           break;
         case 'r':
-          byte += bitPatterns.dirRight + bitPatterns.move;
+          byte += bitPatterns.Right + bitPatterns.move;
           break;
         case '-':
           break;
