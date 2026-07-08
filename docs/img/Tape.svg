@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1888.064" height="358.557">
-  <path d="M0 0h1888.064v358.557H0z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.0755906"/>
+  <path d="M2.68-1.537h1888.064V357.02H2.68Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:.0755906"/>
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M842.638 223.595h190v80h-190Z" paint-order="fill stroke markers"/>
   <text x="1027.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="847.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="892.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="892.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="952.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="922.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1012.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DIn</text>
@@ -28,7 +28,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1032.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1117.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1037.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1042.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1042.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1102.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1072.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1102.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -47,7 +47,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1122.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1207.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1127.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1132.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1132.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1192.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1162.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1192.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -66,7 +66,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1212.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1297.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1217.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1222.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1222.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1282.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1252.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1282.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -85,7 +85,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1302.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1387.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1307.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1312.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1312.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1372.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1342.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1372.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -104,7 +104,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1392.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1477.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1397.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1402.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1402.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1462.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1432.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1462.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -123,7 +123,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1482.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1567.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1487.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1492.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1492.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1552.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1522.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1552.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -142,7 +142,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M572.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="657.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="577.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="582.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="582.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="642.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="612.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="642.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -161,7 +161,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M662.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="747.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="667.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="672.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="672.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="732.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="702.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="732.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -180,7 +180,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M752.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="837.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="757.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="762.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="762.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="822.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="792.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="822.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -199,7 +199,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M302.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="387.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="307.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="312.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="312.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="372.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="342.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="372.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -218,7 +218,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M392.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="477.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="397.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="402.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="402.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="462.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="432.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="462.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -237,7 +237,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M482.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="567.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="487.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="492.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="492.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="552.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="522.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="552.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -256,7 +256,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1572.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1657.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1577.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1582.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1582.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1642.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1612.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1642.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -275,7 +275,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1662.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="1747.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="1667.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="1672.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1672.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1732.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="1702.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1732.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -294,7 +294,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M212.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="297.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="217.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="222.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="222.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="282.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="252.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="282.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -313,7 +313,7 @@
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M122.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
   <text x="207.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="127.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
-  <text x="132.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="132.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="192.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
   <text x="162.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="192.138" y="297.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">InitVal</text>
@@ -330,7 +330,7 @@
   <path fill="green" d="M165.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
   <path fill="green" d="M195.138 303.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M1752.638 223.595h90v80h-90z" paint-order="fill stroke markers"/>
-  <text x="1772.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="1772.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="1802.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="1757.138" y="258.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-decoration="normal">DInL</text>
   <text x="1832.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
@@ -345,7 +345,7 @@
   <path fill="green" d="M1755.138 253.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
   <path fill="green" d="M1835.138 223.095a3 3 0 1 1 0-.003z" paint-order="stroke fill markers"/>
   <path fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="3" d="M32.638 223.595h90v80h-90Z" paint-order="fill stroke markers"/>
-  <text x="52.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">DirL</text>
+  <text x="52.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Left</text>
   <text x="82.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Move</text>
   <text x="117.138" y="278.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="end" text-decoration="normal">DInR</text>
   <text x="112.138" y="236.095" dominant-baseline="alphabetic" font-family="sans-serif" font-size="12" text-anchor="middle" text-decoration="normal">Reset</text>
@@ -911,10 +911,10 @@
   <circle cx="1132.571" cy="47.679" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
   <circle cx="1399.623" cy="47.679" r="3.071" style="fill:red;stroke:red;stroke-width:.0755906"/>
   <text xml:space="preserve" x="481.07" y="23.801" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="481.07" y="23.801">Overflow</tspan><tspan x="481.07" y="38.801">Left</tspan></text>
-  <text xml:space="preserve" x="862.789" y="22.391" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="862.789" y="22.391">Symbol Read</tspan></text>
-  <text xml:space="preserve" x="1017.308" y="16.271" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1017.308" y="16.271">Symbol </tspan><tspan x="1017.308" y="31.271">to Print</tspan></text>
-  <text xml:space="preserve" x="982.913" y="38.804" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="982.913" y="38.804">Write</tspan></text>
-  <text xml:space="preserve" x="1069.994" y="18.487" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1069.994" y="18.487">Move</tspan></text>
-  <text xml:space="preserve" x="1129.124" y="16.133" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1129.124" y="16.133">Dir</tspan><tspan x="1129.124" y="31.133">Left</tspan></text>
+  <text xml:space="preserve" x="862.789" y="36.398" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="862.789" y="36.398">Symbol Read</tspan></text>
+  <text xml:space="preserve" x="1031.271" y="20.872" style="font-style:normal;font-variant:normal;font-weight:400;font-stretch:normal;font-size:12px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:&quot;sans-serif, Normal&quot;;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1031.271" y="20.872">New </tspan><tspan x="1032.831" y="35.872">Symbol </tspan></text>
+  <text xml:space="preserve" x="968.259" y="37.314" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="968.259" y="37.314">Write</tspan></text>
+  <text xml:space="preserve" x="1086.087" y="37.514" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1086.087" y="37.514">Move</tspan></text>
+  <text xml:space="preserve" x="1140.889" y="36.518" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1140.889" y="36.518">Left</tspan></text>
   <text xml:space="preserve" x="1399.224" y="14.921" style="font-size:12px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0;word-spacing:0;text-anchor:middle"><tspan x="1399.224" y="14.921">Overflow</tspan><tspan x="1399.224" y="29.921">right</tspan></text>
 </svg>
