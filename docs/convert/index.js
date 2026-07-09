@@ -44,10 +44,10 @@ $btn.addEventListener('click', (ev) => {
 
             <td>${byte.toString(2).padStart(10, '0')}</td>
             
-            <td>${byte & bitPatterns.dirLeft ? 1 : 0}</td>
-            <td>${byte & bitPatterns.printOne ? 1 : 0}</td>
-            <td>${byte & bitPatterns.move ? 1 : 0}</td>
             <td>${byte & bitPatterns.write ? 1 : 0}</td>
+            <td>${byte & bitPatterns.symbolOne ? 1 : 0}</td>
+            <td>${byte & bitPatterns.move ? 1 : 0}</td>
+            <td>${byte & bitPatterns.Left ? 1 : 0}</td>
             <td>${(byte & bitPatterns.halt).toString(2).padStart(6, '0')}</td>
           </tr>`
         );
