@@ -444,12 +444,13 @@ The program runs like this:
   * *state* `000000` 
   * *symbol* `0`
 
-3. The memory outputs the data at address `0` which is `0x080` hex or `001000000` binary which will be broken in the *splitter*, from left to right, as follows:
-   * bit 9: `Write = 0` meaning it doesn't need to write anything in the *tape*. 
-   * bit 8: `New Symbol = 0` irrelevant since bit 9 says it won't write anything.
-   * bit 7: `Move = 1`  meaning it should move.
-   * bit 6: `Left = 0` since it according to bit 7 it must move and it is not moving left, it will move right.
+3. The memory outputs the data at address `0` which is `0x080` hex or `001000000` binary which will be broken in the *splitter*, as follows:
+   
    * bits 0 to 5: `Next State = 000000` the *Machine* should remain at the first state labeled `s0` above.
+   * bit 6: `Write = 0` meaning it doesn't need to write anything in the *tape*. 
+   * bit 7: `New Symbol = 0` irrelevant since bit 9 says it won't write anything.
+   * bit 8: `Move = 1`  meaning it should move.
+   * bit 9: `Left = 0` since it according to bit 7 it must move and it is not moving left, it will move right.
 
 4. On the next clock cycle, the *sequencer* would turn off the `Read` pin, allow for a gap with no pins active and then turn the `Print` pin on.  This means this is the time for printing, whether it does so depends on the bit 9: `Write` which is `0` so it doesn't actually print anything on the *tape* because the red dot labeled `Write` will remain `0`.
 5. Another gap in the *sequencer* with no active pins on and then the `Move` pin is switched on.  Since the bit `7` of the action (`Move` is `1`) the red dot pin `Move` will turn on so the tape will move, and since the *Left* pin `Left` is `0`, it will move right.
@@ -466,11 +467,11 @@ Let us assume it does bump with a `1` symbol, which would form the memory addres
 
 Which points to the second row of the table extract above, containing:
 
-   * bit 9: `Write = 0` Don't write.
-   * bit 8: `New Symbol = 0`  which doesn't matter since it won't write anything into the tape.
-   * bit 7: `Move = 0`  Don't move.
-   * bit 6: `Left = 0` which doesn't matter since it won't move.
    * bits 0 to 5: `Next State = 000001` the *Machine* should switch to the state `s1` above.
+   * bit 6: `Write = 0` Don't write.
+   * bit 7: `New Symbol = 0`  which doesn't matter since it won't write anything into the tape.
+   * bit 8: `Move = 0`  Don't move.
+   * bit 9: `Left = 0` which doesn't matter since it won't move.
 
 In other words, when it finds a `1` instead of keep moving the *tape* right, it should leave the *tape* alone and switch to *state* `s1` and since we know the *symbol* is `1`, it will be located at address `000 000001 1`, once again with spaces to make it easy to interpret the various parts, and corresponds to the fourth row in the complete *State Table*, where the program to do the actual copying is done.  The [Wikipedia](https://en.wikipedia.org/wiki/Turing_machine_examples#A_copy_subroutine) article explain how it works.  This version is slightly different from that in that
 
