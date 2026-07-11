@@ -1,0 +1,2 @@
+#!/bin/bash
+./docs/src/convert.mjs;

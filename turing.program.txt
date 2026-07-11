@@ -1,7 +1,5 @@
-{
-name: Copy
-setup: X[x]
----
+# name: Copy
+# Initial values: xX[x]
 ##State  Symbol   Print   Move     Next State
    s1      0        -       -            Halt
    s1      1        0       R            s2
@@ -13,11 +11,9 @@ setup: X[x]
    s4      1        1       L            s4
    s5      0        1       R            s1
    s5      1        1       L            s5
-}   
-{
-name: Busy_Beaver
-org: 0x80
----
+----
+# name: Busy_Beaver
+# No initial values
 ##State  Symbol   Print   Move    Next State
    A        0       1       L         B
    A        1       1       R         C
@@ -25,12 +21,9 @@ org: 0x80
    B        1       1       L         B
    C        0       1       R         B
    C        1       1       -         Halt
-}
-{
-name: Alt Copy
-setup: Xx-[-]
-org: 0x100
----
+-----
+#name: Alt Copy
+#setup: Xx-[-]
 ##State  Symbol   Print   Move    Next State
    s0      0        -       R            s0
    s0      1        -       -            s1
@@ -44,20 +37,16 @@ org: 0x100
    s4      1        -       L            s4
    s5      0        1       R            s1
    s5      1        -       L            s5
-}   
-{
-   name: Overflow Right
-   ---
+----
+#   name: Overflow Right
    A 0 1 R B
    A 1 - R B
    B 0 - R B
    B 1 0 R B
-}
-{
-   name: Overflow Left
-   ---
+---
+#   name: Overflow Left
    A 0 1 L B
    A 1 1 L B
    B 0 - L B
    B 1 0 L B
-}
+
